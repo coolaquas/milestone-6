@@ -1,0 +1,24 @@
+{
+  "name": "milestone-6",
+  "version": "1.0.0",
+  "description": "## Learning Competencies",
+  "main": "app.js",
+  "scripts": {
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1/issues"
+  },
+  "homepage": "https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20"
+  }
+}
