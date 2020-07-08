@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Comments | Hacker-News </title>
+  <% include head %>
+</head>
+
+<body>
+  <% include navbar %>
+
+  <div>
+    <a href="<%= parsedData.URL %>" target="_blank"> <%= parsedData.title %> </a>
+    <p id="list_footer"> <%= parsedData.vote %> points by <%= parsedData.by %> <%= parsedData.post_creation %> | <a
+        href="/comment/view/<%= parsedData._id %>"><%= parsedData.comments.length %> comments</a></p>
+    <p>
+
+
+    <form action="/comment/addComment/<%= parsedData._id %>" method="post">
+      <p>
+        <input type="text" placeholder="Please enter your comment" name="comment" />
+      </p>
+      <p>
+        <input type="submit" class="btn btn-primary" value="Add Comment" />
+      </p>
+    </form>
+    </p>
+
+
+
+    <% parsedData.comments.map((comment)=> { %>
+    <div>
+      <li class="list"><%= comment.body %>
+        <p id="list_footer"> <%= comment.by %> <%= comment.comment_creation %></p>
+      </li>
+    </div>
+    <% })  %>
+
+  </div>
+
+</body>
+</html>
