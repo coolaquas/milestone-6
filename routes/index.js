@@ -5,12 +5,22 @@ const request = require("request");
 const ModelData = require('../models/postModel');
 const submitRouter = require("./submitRouter");
 const commentRouter = require("./commentRouter");
-// const apiRouter = require("./api");
-// const Comments = require('../models//commentModel');
+const jobRouter = require("./jobRouter");
+const askRouter = require("./askRouter");
+const pastRouter = require("./pastRouter");
 
+
+// const apiRouter = require("./api");
 // router.use('/createApi', apiRouter);
+
 router.use('/submit', submitRouter);
 router.use('/comment', commentRouter);
+router.use('/job', jobRouter);
+router.use('/ask', askRouter);
+router.use('/past', pastRouter);
+
+
+
 
 
 

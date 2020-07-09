@@ -31,7 +31,11 @@ router.post("/createPost", (req, res, next) => {
       err ? res.send("you have some error", err) : res.redirect("/");
     })
   } else {
-    res.json("Please login first for adding coments");
+    let userName = 'undefined';
+    if (req.user && req.user !== {}) {
+      userName = req.user.displayName;
+    }
+    res.render('loginPlease', { userDisplayName: `${userName}`, label: "POST" })
   }
 })
 

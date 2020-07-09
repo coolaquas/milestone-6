@@ -7,9 +7,8 @@ router.get("/", (req, res, next) => {
     if (req.user && req.user !== {}) {
         userName = req.user.displayName;
     }
-    Comments.find({}, (error, result) => {
-        let allComments = JSON.stringify(result);
-        res.render('comment', { userDisplayName: `${userName}`, parsedData: `${allComments}` });
+    ModelData.Post.find({}, (error, result) => {
+    res.render('comment', { userDisplayName: `${userName}`, parsedData: result });
     })
 })
 
@@ -48,7 +47,11 @@ router.post('/addComment/:post_id', (req, res, next) => {
             })
 
     } else {
-        res.json("Please login first for adding coments");
+        let userName = 'undefined';
+        if (req.user && req.user !== {}) {
+            userName = req.user.displayName;
+        }
+        res.render('loginPlease', { userDisplayName: `${userName}`, label: "COMMENT" })
     }
 })
 

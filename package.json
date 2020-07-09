@@ -1,24 +1,22 @@
 {
-  "name": "milestone-6",
-  "version": "1.0.0",
-  "description": "## Learning Competencies",
-  "main": "app.js",
+  "name": "hacker-news",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1/issues"
-  },
-  "homepage": "https://github.com/exponentsoftware/-MS_Ms06_Grus_Tep_Hyderabad_2020_1#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.9.20"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.1",
+    "helmet": "^3.23.3",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.9.22",
+    "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
+    "request": "^2.88.2"
   }
 }

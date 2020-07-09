@@ -2,7 +2,7 @@
   <ol>
     <% parsedData.map((post)=> { %>
       <div>
-        <li class="list"><a class= "anchor" href="<%= post.URL %>" target="_blank"> <%= post.title %> </a>
+        <li><a class= "anchor" href="<%= post.URL %>" target="_blank"> <%= post.title %> </a>
           <p id = "list_footer"> <%= post.vote %> points by <%= post.by %> <%= post.post_creation %> | <a href="/comment/view/<%= post._id %>"><%= post.comments.length %> comments</a></p>
         </li>
       </div>
