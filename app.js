@@ -8,8 +8,6 @@ const indexRouter = require('./routes/index');
 const mongoose = require('mongoose');
 
 
-
-
 var app = express();
 app.use(helmet());
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.Promise = global.Promise;
-mongoose.connect(mongoDBConnection, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.mongoDBConnection, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=> console.log("DataBase Connection successful"))
 .catch((err)=>console.log(err));
 
@@ -42,7 +40,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.use(new GitHubStrategy(passportConfig,
+passport.use(new GitHubStrategy(process.env.passportConfig,
   function (accessToken, refreshToken, profile, cb) {
     return cb (null, profile);
   }
