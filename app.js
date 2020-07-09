@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const configDB = require('./allConfig/index');
 mongoose.Promise = global.Promise;
-mongoose.connect(configDB.getDBConnectionString(), { useNewUrlParser: true, useUnifiedTopology: true })
+let mongoDBConnection = configDB.getDBConnectionString()
+mongoose.connect(mongoDBConnection, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=> console.log("DataBase Connection successful"))
 .catch((err)=>console.log(err));
 
@@ -43,7 +44,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-const passportConfig = require("./allConfig/config");
+// const passportConfig = require("./allConfig/config");
 passport.use(new GitHubStrategy(passportConfig,
   function (accessToken, refreshToken, profile, cb) {
     return cb (null, profile);
