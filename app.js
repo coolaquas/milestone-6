@@ -17,13 +17,16 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+//===========MongoDB==================
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.mongoDBConnection, { useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=> console.log("DataBase Connection successful"))
 .catch((err)=>console.log(err));
 
+//====================================
+
 //=======Passport========
+
 const session = require("express-session");
 const passport = require("passport");
 const GitHubStrategy = require('passport-github').Strategy;
@@ -40,7 +43,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-passport.use(new GitHubStrategy(process.env.passportConfig,
+passport.use(new GitHubStrategy(passportConfig,
   function (accessToken, refreshToken, profile, cb) {
     return cb (null, profile);
   }
@@ -55,9 +58,6 @@ passport.deserializeUser((user,cb)=>{
 //=====================================
 
 app.use('/', indexRouter);
-
-
-
 
 
 
