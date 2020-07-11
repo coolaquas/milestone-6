@@ -126,8 +126,8 @@ a:hover, a:active {
 }
 .box{
   position: absolute;
-  top: 20%;
-  left: 25%;
+  top: 20vh;
+  left: 45vh;
   transition: translate(-50%,-50%);
   width: 800px;
   padding: 50px;
@@ -136,6 +136,7 @@ a:hover, a:active {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
+
 .box h2 {
 margin: 0;
 padding: 0;
@@ -222,52 +223,12 @@ font-size: larger;
   font-size: medium;
   color: aliceblue;
 }
-.footer-container li
-{
-  list-style-type: none;
-}
-
-.footer-container li:first-child
-{
-  margin:0;
-}
-
-.footer-container footer
-{
-  align-items: center;
-  color: #fff;
-}
-
-.footer-container
-{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 98vw;
-  height: 8vh;
-  margin-left: .4vw;
-}
-
-.footer-container .copyright,  .impressum
-{
-  text-align: center;
-}
-
-.footer-container .logo
-{
-  height: 5vh;
-}
-
-.footer-container @media (max-width: 768px) 
-{
-  li
-  {
-    margin-left: 0;
-    margin-bottom: 1vh;
-  }
-  
-  .sozial
-  {
-    margin-bottom: 1vh;
+@media screen and (max-width: 600px) {
+  .box {
+    margin: 10px;
+    top: auto;
+    left: auto;
+    height: auto;
+    width: auto;
   }
 }
