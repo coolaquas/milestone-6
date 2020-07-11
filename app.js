@@ -39,7 +39,7 @@ passport.serializeUser(function (user, done) {
 });
 
 passport.deserializeUser(function (id, done) {
-  ModelData.userData.find({githubId: profile.id}, function (err, user) {
+  ModelData.userData.find({githubId: id}, function (err, user) {
     done(err, user);
   });
 });
