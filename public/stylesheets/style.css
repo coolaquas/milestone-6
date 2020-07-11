@@ -223,7 +223,7 @@ font-size: larger;
   font-size: medium;
   color: aliceblue;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 769px) {
   .box {
     margin: 10px;
     top: auto;
