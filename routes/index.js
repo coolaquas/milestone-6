@@ -34,9 +34,8 @@ router.get("/auth", passport.authenticate('github', {
 }))
 
 router.get("/logout", (req, res, next) => {
-  res.json({ msg: "Work In Progress" });
-  // req.user = {};
-  // res.redirect("/");
+  req.user = null;  
+  res.redirect("/");
 })
 
 // ===================================================================
