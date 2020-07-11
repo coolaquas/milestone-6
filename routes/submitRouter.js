@@ -17,19 +17,20 @@ router.get("/", (req, res, next) => {
 
 router.post("/createPost", (req, res, next) => {
   if (req.user !== []) {
-    const myPostFormData = {
-      title: req.body.title,
-      URL: req.body.URL,
-      vote: 0,
-      type: "Post",
-      by: req.user.displayName,
-      body: req.body.body,
-      hidden: false
-    }
-    let Data = ModelData.Post(myPostFormData);
-    Data.save((err) => {
-      err ? res.send("you have some error", err) : res.redirect("/");
-    })
+    // const myPostFormData = {
+    //   title: req.body.title,
+    //   URL: req.body.URL,
+    //   vote: 0,
+    //   type: "Post",
+    //   by: req.user.displayName,
+    //   body: req.body.body,
+    //   hidden: false
+    // }
+    // let Data = ModelData.Post(myPostFormData);
+    // Data.save((err) => {
+    //   err ? res.send("you have some error", err) : res.redirect("/");
+    // })
+    res.send(req.user);
   } else {
     let userName = 'undefined';
     if (req.user && req.user !== {}) {
