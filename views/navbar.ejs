@@ -31,12 +31,11 @@
       <div class="navbar-brand"> Welcome , <%= userDisplayName %></div>
       <%} %>
 
-      <li><% if (userDisplayName === "undefined") { %>
-        <a class="navbar-brand" href="/login">Login</a>
+      <% if (userDisplayName === "undefined") { %>
+        <li><a class="navbar-brand" href="/login">Login</a></li>
         <% } else { %>
-        <a class="navbar-brand" href="/logout">Logout</a>
+        <li><a class="navbar-brand" href="/logout">Logout</a></li>
         <% } %>
-      </li>
     </ul>
   </div>
 </nav>
