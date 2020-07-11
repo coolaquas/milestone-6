@@ -34,7 +34,8 @@ router.get("/auth", passport.authenticate('github', {
 }))
 
 router.get("/logout", (req, res, next) => {
-  req.user = null;  
+  req.session = null;
+  req.logout();
   res.redirect("/");
 })
 
