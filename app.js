@@ -6,6 +6,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const ModelData = require('./models/postModel');
 
 
 var app = express();
@@ -17,43 +19,67 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json());
 //===========MongoDB==================
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.mongoDBConnection, { useNewUrlParser: true, useUnifiedTopology: true })
-.then(()=> console.log("DataBase Connection successful"))
-.catch((err)=>console.log(err));
-
-//====================================
+  .then(() => console.log("DataBase Connection successful"))
+  .catch((err) => console.log(err));
 
 //=======Passport========
 
-const session = require("express-session");
+const session = require('cookie-session');
 const passport = require("passport");
-const GitHubStrategy = require('passport-github').Strategy;
-//=======================
+const { Console } = require('console');
 
 
+passport.serializeUser(function (user, done) {
+  done(null, user.id);
+});
 
-//=========Passport Config ============
-app.use(session({
-  secret: 'keyboard Sam',
-  resave: false,
-  saveUninitialized: true
+passport.deserializeUser(function (id, done) {
+  ModelData.userData.findById(id, function (err, user) {
+    done(err, user);
+  });
+});
+passport.use(new GitHubStrategy({
+  clientID: GITHUB_CLIENT_ID,
+  clientSecret: GITHUB_CLIENT_SECRET,
+  callbackURL: "https://samrat-news.herokuapp.com/auth"
+},
+function(accessToken, refreshToken, profile, done) {
+  //check user table for anyone with a githubID of profile.id
+  ModelData.userData.findOne({
+      'githubId': profile.id 
+  }, function(err, user) {
+      if (err) {
+          return done(err);
+      }
+      //No user was found... so create a new user with values from Github (all the profile. stuff)
+      if (!user) {
+        const userLoginData = {
+                  githubId: profile.id,
+                  displayName:profile.displayName,
+                  profileUrl:profile.profileUrl
+                }
+                let Data = ModelData.userData(userLoginData);
+                Data.save(function(err) {
+                  if (err) console.log(err);
+                  return done(err, user);
+              });
+          } else {
+              //found user. Return
+              return done(err, user);
+          }
+      });
+  }
+));
+app.use(cookieSession({
+  name: 'hacker-News Session',
+  keys: ['key1', 'key2']
 }))
 app.use(passport.initialize());
 app.use(passport.session());
-
-passport.use(new GitHubStrategy(passportConfig,
-  function (accessToken, refreshToken, profile, cb) {
-    return cb (null, profile);
-  }
-));
-passport.serializeUser((user,cb)=>{
-  cb(null,user);
-})
-passport.deserializeUser((user,cb)=>{
-  cb(null,user);
-})
 
 //=====================================
 
@@ -66,12 +92,12 @@ app.use('/', indexRouter);
 
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

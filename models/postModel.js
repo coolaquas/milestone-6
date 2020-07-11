@@ -24,13 +24,22 @@ var postSchema = new Schema({
     hidden: Boolean
 
 });
+var userSchema = new Schema({
+    githubId: String,
+    displayName:String,
+    profileUrl:String
+});
+
 
 
 
 const Post = mongoose.model('Post', postSchema);
 const Comment = mongoose.model('Comment', commentSchema);
+const userData = mongoose.model('userData', userSchema);
+
 
 module.exports = {
     Post: Post,
-    Comment: Comment
+    Comment: Comment,
+    userData: userData
 }
