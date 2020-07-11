@@ -16,7 +16,7 @@ router.get("/", (req, res, next) => {
 
 
 router.post("/createPost", (req, res, next) => {
-  if (req.user == []) {
+  if (req.user !== []) {
     const myPostFormData = {
       title: req.body.title,
       URL: req.body.URL,
