@@ -39,6 +39,11 @@ router.get("/logout", (req, res, next) => {
   // res.redirect("/");
 })
 
+router.get("/loginfailed", (req, res, next) => {
+  res.json({ msg: "Login failed" });
+  // req.user = {};
+  // res.redirect("/");
+})
 // ===================================================================
 
 
