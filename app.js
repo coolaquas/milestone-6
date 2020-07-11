@@ -31,6 +31,7 @@ mongoose.connect(process.env.mongoDBConnection, { useNewUrlParser: true, useUnif
 const session = require('cookie-session');
 const passport = require("passport");
 const { Console } = require('console');
+const GitHubStrategy = require('passport-github').Strategy;
 
 
 passport.serializeUser(function (user, done) {
