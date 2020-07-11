@@ -44,8 +44,8 @@ passport.deserializeUser(function (id, done) {
   });
 });
 passport.use(new GitHubStrategy({
-  clientID: GITHUB_CLIENT_ID,
-  clientSecret: GITHUB_CLIENT_SECRET,
+  clientID: process.env.GITHUB_CLIENT_ID,
+  clientSecret: process.env.GITHUB_CLIENT_SECRET,
   callbackURL: "https://samrat-news.herokuapp.com/auth"
 },
 function(accessToken, refreshToken, profile, done) {
