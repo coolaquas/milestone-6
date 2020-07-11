@@ -1,0 +1,1508 @@
+samrat@Samrat-Pc:~/Desktop/Java-Script/milestone-6$ sudo heroku logs -n 1500 >> ./logs.txt
+[sudo] password for samrat: 
+heroku: Press any key to open up the browser to login or q to exit: 
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/17eeaea2-b6cb-4de2-b9e2-439b1bc479a7
+ ›   Warning: Cannot open browser.
+heroku: Waiting for login... ⣯
+^C
+samrat@Samrat-Pc:~/Desktop/Java-Script/milestone-6$ heroku logs -n 1500
+2020-07-11T18:38:12.413112+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:38:12.413112+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:38:12.413113+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:38:12.413113+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:38:12.413114+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:38:12.413114+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:38:12.413114+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:38:12.413115+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:38:12.413115+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:38:12.413115+00:00 app[web.1]: type: 'User',
+2020-07-11T18:38:12.413116+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:38:12.413116+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:38:12.413117+00:00 app[web.1]: company: null,
+2020-07-11T18:38:12.413117+00:00 app[web.1]: blog: '',
+2020-07-11T18:38:12.413117+00:00 app[web.1]: location: null,
+2020-07-11T18:38:12.413118+00:00 app[web.1]: email: null,
+2020-07-11T18:38:12.413118+00:00 app[web.1]: hireable: null,
+2020-07-11T18:38:12.413118+00:00 app[web.1]: bio: null,
+2020-07-11T18:38:12.413119+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:38:12.413119+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:38:12.413119+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:38:12.413119+00:00 app[web.1]: followers: 1,
+2020-07-11T18:38:12.413120+00:00 app[web.1]: following: 1,
+2020-07-11T18:38:12.413120+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:38:12.413120+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:38:12.413121+00:00 app[web.1]: }
+2020-07-11T18:38:12.413121+00:00 app[web.1]: }
+2020-07-11T18:38:12.619587+00:00 app[web.1]: POST /submit/createPost 302 208.888 ms - 46
+2020-07-11T18:38:12.621137+00:00 heroku[router]: at=info method=POST path="/submit/createPost" host=samrat-news.herokuapp.com request_id=eb2e2fb0-86b7-4727-bdd7-5655f39e09de fwd="106.209.218.189" dyno=web.1 connect=1ms service=212ms status=302 bytes=427 protocol=https
+2020-07-11T18:38:12.931102+00:00 app[web.1]: {
+2020-07-11T18:38:12.931120+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:38:12.931121+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:38:12.931122+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:38:12.931122+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:38:12.931122+00:00 app[web.1]: photos: [
+2020-07-11T18:38:12.931123+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:38:12.931123+00:00 app[web.1]: ],
+2020-07-11T18:38:12.931124+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:38:12.931134+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:38:12.931135+00:00 app[web.1]: _json: {
+2020-07-11T18:38:12.931135+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:38:12.931136+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:38:12.931136+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:38:12.931137+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:38:12.931137+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:38:12.931137+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:38:12.931138+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:38:12.931138+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:38:12.931139+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:38:12.931139+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:38:12.931140+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:38:12.931140+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:38:12.931141+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:38:12.931141+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:38:12.931141+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:38:12.931142+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:38:12.931142+00:00 app[web.1]: type: 'User',
+2020-07-11T18:38:12.931143+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:38:12.931143+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:38:12.931143+00:00 app[web.1]: company: null,
+2020-07-11T18:38:12.931143+00:00 app[web.1]: blog: '',
+2020-07-11T18:38:12.931144+00:00 app[web.1]: location: null,
+2020-07-11T18:38:12.931144+00:00 app[web.1]: email: null,
+2020-07-11T18:38:12.931144+00:00 app[web.1]: hireable: null,
+2020-07-11T18:38:12.931145+00:00 app[web.1]: bio: null,
+2020-07-11T18:38:12.931145+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:38:12.931145+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:38:12.931146+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:38:12.931146+00:00 app[web.1]: followers: 1,
+2020-07-11T18:38:12.931146+00:00 app[web.1]: following: 1,
+2020-07-11T18:38:12.931146+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:38:12.931147+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:38:12.931147+00:00 app[web.1]: }
+2020-07-11T18:38:12.931148+00:00 app[web.1]: }
+2020-07-11T18:38:13.123889+00:00 app[web.1]: GET / 200 193.195 ms - 8923
+2020-07-11T18:38:13.125544+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=a105f97e-ff58-4ffb-b72d-028e26adab00 fwd="106.209.218.189" dyno=web.1 connect=1ms service=196ms status=200 bytes=9320 protocol=https
+2020-07-11T18:38:13.570953+00:00 app[web.1]: GET /stylesheets/style.css 304 0.732 ms - -
+2020-07-11T18:38:13.572362+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=959c461c-0632-4b01-8069-d5ab0f1c11c7 fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:38:13.918092+00:00 app[web.1]: GET /images/logo.png 304 8.000 ms - -
+2020-07-11T18:38:13.919312+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=228fc063-cd8f-4280-8db5-4de839f3d16b fwd="106.209.218.189" dyno=web.1 connect=1ms service=10ms status=304 bytes=431 protocol=https
+2020-07-11T18:38:28.536609+00:00 app[web.1]: {
+2020-07-11T18:38:28.536620+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:38:28.536621+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:38:28.536622+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:38:28.536622+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:38:28.536623+00:00 app[web.1]: photos: [
+2020-07-11T18:38:28.536623+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:38:28.536624+00:00 app[web.1]: ],
+2020-07-11T18:38:28.536624+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:38:28.536626+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:38:28.536626+00:00 app[web.1]: _json: {
+2020-07-11T18:38:28.536627+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:38:28.536627+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:38:28.536627+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:38:28.536628+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:38:28.536628+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:38:28.536629+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:38:28.536629+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:38:28.536630+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:38:28.536630+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:38:28.536631+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:38:28.536631+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:38:28.536632+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:38:28.536632+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:38:28.536633+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:38:28.536633+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:38:28.536633+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:38:28.536634+00:00 app[web.1]: type: 'User',
+2020-07-11T18:38:28.536634+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:38:28.536635+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:38:28.536635+00:00 app[web.1]: company: null,
+2020-07-11T18:38:28.536636+00:00 app[web.1]: blog: '',
+2020-07-11T18:38:28.536636+00:00 app[web.1]: location: null,
+2020-07-11T18:38:28.536637+00:00 app[web.1]: email: null,
+2020-07-11T18:38:28.536637+00:00 app[web.1]: hireable: null,
+2020-07-11T18:38:28.536637+00:00 app[web.1]: bio: null,
+2020-07-11T18:38:28.536638+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:38:28.536638+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:38:28.536639+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:38:28.536639+00:00 app[web.1]: followers: 1,
+2020-07-11T18:38:28.536639+00:00 app[web.1]: following: 1,
+2020-07-11T18:38:28.536640+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:38:28.536640+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:38:28.536641+00:00 app[web.1]: }
+2020-07-11T18:38:28.536641+00:00 app[web.1]: }
+2020-07-11T18:38:28.538627+00:00 app[web.1]: GET /logout 200 3.088 ms - 26
+2020-07-11T18:38:28.540421+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=7d408aa9-aaf4-42e8-9a1d-e2a459a1afd2 fwd="106.209.218.189" dyno=web.1 connect=1ms service=6ms status=200 bytes=426 protocol=https
+2020-07-11T18:42:20.000000+00:00 app[api]: Build started by user samrat.mallick1@gmail.com
+2020-07-11T18:42:38.837286+00:00 app[api]: Deploy 1e7dc63d by user samrat.mallick1@gmail.com
+2020-07-11T18:42:38.837286+00:00 app[api]: Release v54 created by user samrat.mallick1@gmail.com
+2020-07-11T18:42:39.000000+00:00 app[api]: Build succeeded
+2020-07-11T18:42:39.880863+00:00 heroku[web.1]: Restarting
+2020-07-11T18:42:39.882996+00:00 heroku[web.1]: State changed from up to starting
+2020-07-11T18:42:41.015815+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-07-11T18:42:41.136497+00:00 heroku[web.1]: Process exited with status 143
+2020-07-11T18:42:41.985990+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-07-11T18:42:44.167194+00:00 app[web.1]: 
+2020-07-11T18:42:44.167218+00:00 app[web.1]: > hacker-news@0.0.0 start /app
+2020-07-11T18:42:44.167218+00:00 app[web.1]: > node ./bin/www
+2020-07-11T18:42:44.167218+00:00 app[web.1]: 
+2020-07-11T18:42:44.889611+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2020-07-11T18:42:44.889654+00:00 app[web.1]: designed for a production environment, as it will leak
+2020-07-11T18:42:44.889655+00:00 app[web.1]: memory, and will not scale past a single process.
+2020-07-11T18:42:45.469745+00:00 heroku[web.1]: State changed from starting to up
+2020-07-11T18:42:46.131739+00:00 app[web.1]: DataBase Connection successful
+2020-07-11T18:42:54.525251+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=51fa32cf-4452-4560-a29d-778ed8fea5dd fwd="106.209.218.189" dyno=web.1 connect=0ms service=1345ms status=200 bytes=9373 protocol=https
+2020-07-11T18:42:54.526625+00:00 app[web.1]: GET / 200 1337.084 ms - 8850
+2020-07-11T18:42:55.649064+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=83df47b2-8efe-4c8f-aed0-a97b2379e35e fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=200 bytes=4825 protocol=https
+2020-07-11T18:42:55.649837+00:00 app[web.1]: GET /stylesheets/style.css 200 5.271 ms - 4343
+2020-07-11T18:42:56.030779+00:00 app[web.1]: GET /images/logo.png 200 1.191 ms - 31541
+2020-07-11T18:42:56.031419+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=31c75e06-d777-4d94-80b8-43a96f3102ec fwd="106.209.218.189" dyno=web.1 connect=1ms service=6ms status=200 bytes=32010 protocol=https
+2020-07-11T18:42:56.053331+00:00 app[web.1]: GET /favicon.ico 404 3.419 ms - 41
+2020-07-11T18:42:56.054747+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=samrat-news.herokuapp.com request_id=f51ae6da-535e-46ea-b7e0-1b45decebf60 fwd="106.209.218.189" dyno=web.1 connect=1ms service=7ms status=404 bytes=441 protocol=https
+2020-07-11T18:42:59.751156+00:00 app[web.1]: GET /login 302 3.155 ms - 0
+2020-07-11T18:42:59.753212+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=9eb58c60-e04b-48f9-bec6-d2cd493f3b6d fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=302 bytes=475 protocol=https
+2020-07-11T18:43:00.884321+00:00 heroku[router]: at=info method=GET path="/auth?code=ea33d9b20744ca71b197" host=samrat-news.herokuapp.com request_id=64f3a8af-b0be-45fe-8267-b9162542c9f9 fwd="106.209.218.189" dyno=web.1 connect=0ms service=219ms status=302 bytes=427 protocol=https
+2020-07-11T18:43:00.884429+00:00 app[web.1]: GET /auth?code=ea33d9b20744ca71b197 302 215.401 ms - 46
+2020-07-11T18:43:01.221899+00:00 app[web.1]: {
+2020-07-11T18:43:01.221935+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:43:01.221936+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:43:01.221937+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:43:01.221937+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:43:01.221937+00:00 app[web.1]: photos: [
+2020-07-11T18:43:01.221938+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:43:01.221939+00:00 app[web.1]: ],
+2020-07-11T18:43:01.221939+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:43:01.221944+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:43:01.221944+00:00 app[web.1]: _json: {
+2020-07-11T18:43:01.221945+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:43:01.221945+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:43:01.221945+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:43:01.221946+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:43:01.221946+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:43:01.221947+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:43:01.221947+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:43:01.221948+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:43:01.221949+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:43:01.221949+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:43:01.221949+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:43:01.221950+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:43:01.221950+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:43:01.221951+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:43:01.221951+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:43:01.221952+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:43:01.221952+00:00 app[web.1]: type: 'User',
+2020-07-11T18:43:01.221952+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:43:01.221953+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:43:01.221953+00:00 app[web.1]: company: null,
+2020-07-11T18:43:01.221954+00:00 app[web.1]: blog: '',
+2020-07-11T18:43:01.221954+00:00 app[web.1]: location: null,
+2020-07-11T18:43:01.221954+00:00 app[web.1]: email: null,
+2020-07-11T18:43:01.221955+00:00 app[web.1]: hireable: null,
+2020-07-11T18:43:01.221955+00:00 app[web.1]: bio: null,
+2020-07-11T18:43:01.221955+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:43:01.221956+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:43:01.221956+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:43:01.221956+00:00 app[web.1]: followers: 1,
+2020-07-11T18:43:01.221957+00:00 app[web.1]: following: 1,
+2020-07-11T18:43:01.221957+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:43:01.221957+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:43:01.221957+00:00 app[web.1]: }
+2020-07-11T18:43:01.221958+00:00 app[web.1]: }
+2020-07-11T18:43:01.417320+00:00 app[web.1]: GET / 200 200.598 ms - 8923
+2020-07-11T18:43:01.419722+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=2e1064ba-325c-45b2-903d-267c311c06f3 fwd="106.209.218.189" dyno=web.1 connect=1ms service=206ms status=200 bytes=9320 protocol=https
+2020-07-11T18:43:01.783206+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=965bbc4c-235b-4b58-bcd8-af9aa5ccc12f fwd="106.209.218.189" dyno=web.1 connect=1ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:43:01.783300+00:00 app[web.1]: GET /stylesheets/style.css 304 0.875 ms - -
+2020-07-11T18:43:02.149394+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=c369f760-8d04-4d26-b11b-b7b444a84f3f fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:43:02.149650+00:00 app[web.1]: GET /images/logo.png 304 0.581 ms - -
+2020-07-11T18:43:04.628775+00:00 app[web.1]: {
+2020-07-11T18:43:04.628786+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:43:04.628787+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:43:04.628788+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:43:04.628788+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:43:04.628789+00:00 app[web.1]: photos: [
+2020-07-11T18:43:04.628789+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:43:04.628790+00:00 app[web.1]: ],
+2020-07-11T18:43:04.628790+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:43:04.628792+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:43:04.628792+00:00 app[web.1]: _json: {
+2020-07-11T18:43:04.628792+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:43:04.628793+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:43:04.628793+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:43:04.628794+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:43:04.628794+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:43:04.628794+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:43:04.628795+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:43:04.628796+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:43:04.628796+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:43:04.628797+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:43:04.628797+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:43:04.628797+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:43:04.628798+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:43:04.628798+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:43:04.628799+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:43:04.628799+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:43:04.628800+00:00 app[web.1]: type: 'User',
+2020-07-11T18:43:04.628800+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:43:04.628800+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:43:04.628800+00:00 app[web.1]: company: null,
+2020-07-11T18:43:04.628801+00:00 app[web.1]: blog: '',
+2020-07-11T18:43:04.628801+00:00 app[web.1]: location: null,
+2020-07-11T18:43:04.628802+00:00 app[web.1]: email: null,
+2020-07-11T18:43:04.628802+00:00 app[web.1]: hireable: null,
+2020-07-11T18:43:04.628802+00:00 app[web.1]: bio: null,
+2020-07-11T18:43:04.628803+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:43:04.628803+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:43:04.628803+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:43:04.628804+00:00 app[web.1]: followers: 1,
+2020-07-11T18:43:04.628804+00:00 app[web.1]: following: 1,
+2020-07-11T18:43:04.628805+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:43:04.628805+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:43:04.628805+00:00 app[web.1]: }
+2020-07-11T18:43:04.628806+00:00 app[web.1]: }
+2020-07-11T18:43:04.633682+00:00 app[web.1]: GET /job 200 5.858 ms - 2333
+2020-07-11T18:43:04.633819+00:00 heroku[router]: at=info method=GET path="/job" host=samrat-news.herokuapp.com request_id=66aaa5a7-9c31-4977-81ab-c9ef248df706 fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=200 bytes=2729 protocol=https
+2020-07-11T18:43:04.989596+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=c236638f-7cb4-42be-a1c5-e28838cc1d0e fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:43:04.989895+00:00 app[web.1]: GET /stylesheets/style.css 304 1.072 ms - -
+2020-07-11T18:43:04.992164+00:00 app[web.1]: GET /images/uc.png 200 3.175 ms - 174928
+2020-07-11T18:43:05.000843+00:00 heroku[router]: at=info method=GET path="/images/uc.png" host=samrat-news.herokuapp.com request_id=cd083335-f23b-48b5-b0b3-6b0e1a4dbcc6 fwd="106.209.218.189" dyno=web.1 connect=1ms service=15ms status=200 bytes=175399 protocol=https
+2020-07-11T18:43:05.308489+00:00 app[web.1]: GET /images/logo.png 304 0.872 ms - -
+2020-07-11T18:43:05.314187+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=34494978-d29a-4cd7-8d6c-04b9003f701f fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=304 bytes=431 protocol=https
+2020-07-11T18:43:11.728600+00:00 app[web.1]: {
+2020-07-11T18:43:11.728618+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:43:11.728619+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:43:11.728619+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:43:11.728620+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:43:11.728620+00:00 app[web.1]: photos: [
+2020-07-11T18:43:11.728621+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:43:11.728621+00:00 app[web.1]: ],
+2020-07-11T18:43:11.728622+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:43:11.728623+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:43:11.728623+00:00 app[web.1]: _json: {
+2020-07-11T18:43:11.728624+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:43:11.728624+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:43:11.728625+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:43:11.728625+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:43:11.728626+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:43:11.728626+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:43:11.728626+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:43:11.728627+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:43:11.728628+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:43:11.728628+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:43:11.728628+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:43:11.728629+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:43:11.728629+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:43:11.728630+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:43:11.728630+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:43:11.728631+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:43:11.728631+00:00 app[web.1]: type: 'User',
+2020-07-11T18:43:11.728631+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:43:11.728632+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:43:11.728632+00:00 app[web.1]: company: null,
+2020-07-11T18:43:11.728633+00:00 app[web.1]: blog: '',
+2020-07-11T18:43:11.728633+00:00 app[web.1]: location: null,
+2020-07-11T18:43:11.728633+00:00 app[web.1]: email: null,
+2020-07-11T18:43:11.728634+00:00 app[web.1]: hireable: null,
+2020-07-11T18:43:11.728634+00:00 app[web.1]: bio: null,
+2020-07-11T18:43:11.728635+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:43:11.728635+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:43:11.728636+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:43:11.728637+00:00 app[web.1]: followers: 1,
+2020-07-11T18:43:11.728637+00:00 app[web.1]: following: 1,
+2020-07-11T18:43:11.728637+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:43:11.728638+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:43:11.728638+00:00 app[web.1]: }
+2020-07-11T18:43:11.728639+00:00 app[web.1]: }
+2020-07-11T18:43:11.729995+00:00 app[web.1]: GET /logout 302 2.106 ms - 46
+2020-07-11T18:43:11.730746+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=08d99bf6-a7c8-4fd2-addf-ed9132d08e40 fwd="106.209.218.189" dyno=web.1 connect=1ms service=5ms status=302 bytes=427 protocol=https
+2020-07-11T18:43:12.044019+00:00 app[web.1]: {
+2020-07-11T18:43:12.044031+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:43:12.044032+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:43:12.044034+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:43:12.044034+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:43:12.044035+00:00 app[web.1]: photos: [
+2020-07-11T18:43:12.044037+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:43:12.044038+00:00 app[web.1]: ],
+2020-07-11T18:43:12.044038+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:43:12.044045+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:43:12.044046+00:00 app[web.1]: _json: {
+2020-07-11T18:43:12.044046+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:43:12.044047+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:43:12.044047+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:43:12.044048+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:43:12.044048+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:43:12.044049+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:43:12.044049+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:43:12.044049+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:43:12.044050+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:43:12.044050+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:43:12.044051+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:43:12.044051+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:43:12.044052+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:43:12.044052+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:43:12.044052+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:43:12.044053+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:43:12.044053+00:00 app[web.1]: type: 'User',
+2020-07-11T18:43:12.044053+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:43:12.044054+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:43:12.044054+00:00 app[web.1]: company: null,
+2020-07-11T18:43:12.044055+00:00 app[web.1]: blog: '',
+2020-07-11T18:43:12.044055+00:00 app[web.1]: location: null,
+2020-07-11T18:43:12.044056+00:00 app[web.1]: email: null,
+2020-07-11T18:43:12.044056+00:00 app[web.1]: hireable: null,
+2020-07-11T18:43:12.044057+00:00 app[web.1]: bio: null,
+2020-07-11T18:43:12.044057+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:43:12.044057+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:43:12.044058+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:43:12.044058+00:00 app[web.1]: followers: 1,
+2020-07-11T18:43:12.044058+00:00 app[web.1]: following: 1,
+2020-07-11T18:43:12.044059+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:43:12.044059+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:43:12.044060+00:00 app[web.1]: }
+2020-07-11T18:43:12.044060+00:00 app[web.1]: }
+2020-07-11T18:43:12.239085+00:00 app[web.1]: GET / 304 196.384 ms - -
+2020-07-11T18:43:12.241276+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=8ceb8250-759f-4c5b-9f76-b0b326a0822a fwd="106.209.218.189" dyno=web.1 connect=1ms service=200ms status=304 bytes=345 protocol=https
+2020-07-11T18:43:12.584571+00:00 app[web.1]: GET /stylesheets/style.css 304 0.865 ms - -
+2020-07-11T18:43:12.585179+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=401f4389-e656-4a8f-a254-1ff9a9510562 fwd="106.209.218.189" dyno=web.1 connect=1ms service=4ms status=304 bytes=431 protocol=https
+2020-07-11T18:43:12.944051+00:00 app[web.1]: GET /images/logo.png 304 0.810 ms - -
+2020-07-11T18:43:12.947816+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=e0f401a7-fc53-439a-a112-fdaec2266519 fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:45:25.000000+00:00 app[api]: Build started by user samrat.mallick1@gmail.com
+2020-07-11T18:45:42.227803+00:00 app[api]: Deploy 8716ab54 by user samrat.mallick1@gmail.com
+2020-07-11T18:45:42.227803+00:00 app[api]: Release v55 created by user samrat.mallick1@gmail.com
+2020-07-11T18:45:42.434608+00:00 heroku[web.1]: Restarting
+2020-07-11T18:45:42.438003+00:00 heroku[web.1]: State changed from up to starting
+2020-07-11T18:45:43.000000+00:00 app[api]: Build succeeded
+2020-07-11T18:45:43.335057+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-07-11T18:45:43.433971+00:00 heroku[web.1]: Process exited with status 143
+2020-07-11T18:45:44.866462+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-07-11T18:45:47.823076+00:00 app[web.1]: 
+2020-07-11T18:45:47.823101+00:00 app[web.1]: > hacker-news@0.0.0 start /app
+2020-07-11T18:45:47.823102+00:00 app[web.1]: > node ./bin/www
+2020-07-11T18:45:47.823102+00:00 app[web.1]: 
+2020-07-11T18:45:48.902331+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2020-07-11T18:45:48.902360+00:00 app[web.1]: designed for a production environment, as it will leak
+2020-07-11T18:45:48.902361+00:00 app[web.1]: memory, and will not scale past a single process.
+2020-07-11T18:45:49.271490+00:00 heroku[web.1]: State changed from starting to up
+2020-07-11T18:45:50.231939+00:00 app[web.1]: DataBase Connection successful
+2020-07-11T18:45:52.720572+00:00 app[web.1]: GET / 200 1416.628 ms - 8850
+2020-07-11T18:45:52.721456+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=573c1b7f-f966-4414-aafb-d166220adab3 fwd="106.209.218.189" dyno=web.1 connect=1ms service=1449ms status=200 bytes=9375 protocol=https
+2020-07-11T18:45:53.254727+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=6d2adecc-7311-490e-bc9a-cd74c1161356 fwd="106.209.218.189" dyno=web.1 connect=1ms service=15ms status=200 bytes=4825 protocol=https
+2020-07-11T18:45:53.257175+00:00 app[web.1]: GET /stylesheets/style.css 200 8.089 ms - 4343
+2020-07-11T18:45:53.264267+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=d6b01b27-04e5-4206-adae-c992d3bfef3b fwd="106.209.218.189" dyno=web.1 connect=0ms service=15ms status=200 bytes=32010 protocol=https
+2020-07-11T18:45:53.266493+00:00 app[web.1]: GET /images/logo.png 200 2.201 ms - 31541
+2020-07-11T18:45:58.847628+00:00 app[web.1]: GET /login 302 7.885 ms - 0
+2020-07-11T18:45:58.852366+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=99888381-cb11-49c2-be48-0dcf66593c3d fwd="106.209.218.189" dyno=web.1 connect=0ms service=14ms status=302 bytes=475 protocol=https
+2020-07-11T18:46:00.098681+00:00 app[web.1]: GET /auth?code=af7fdcfbe2bd3e50af03 302 226.008 ms - 46
+2020-07-11T18:46:00.100843+00:00 heroku[router]: at=info method=GET path="/auth?code=af7fdcfbe2bd3e50af03" host=samrat-news.herokuapp.com request_id=a146468a-5d1e-4ab9-911c-a97c779512d7 fwd="106.209.218.189" dyno=web.1 connect=0ms service=231ms status=302 bytes=427 protocol=https
+2020-07-11T18:46:00.416022+00:00 app[web.1]: {
+2020-07-11T18:46:00.416030+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:46:00.416031+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:46:00.416033+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:46:00.416033+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:46:00.416034+00:00 app[web.1]: photos: [
+2020-07-11T18:46:00.416034+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:46:00.416035+00:00 app[web.1]: ],
+2020-07-11T18:46:00.416035+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:46:00.416038+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:46:00.416039+00:00 app[web.1]: _json: {
+2020-07-11T18:46:00.416039+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:46:00.416040+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:46:00.416040+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:46:00.416041+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:46:00.416041+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:46:00.416041+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:46:00.416042+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:46:00.416042+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:46:00.416043+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:46:00.416043+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:46:00.416044+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:46:00.416044+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:46:00.416045+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:46:00.416045+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:46:00.416045+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:46:00.416046+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:46:00.416046+00:00 app[web.1]: type: 'User',
+2020-07-11T18:46:00.416046+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:46:00.416047+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:46:00.416047+00:00 app[web.1]: company: null,
+2020-07-11T18:46:00.416047+00:00 app[web.1]: blog: '',
+2020-07-11T18:46:00.416048+00:00 app[web.1]: location: null,
+2020-07-11T18:46:00.416048+00:00 app[web.1]: email: null,
+2020-07-11T18:46:00.416048+00:00 app[web.1]: hireable: null,
+2020-07-11T18:46:00.416049+00:00 app[web.1]: bio: null,
+2020-07-11T18:46:00.416049+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:46:00.416049+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:46:00.416050+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:46:00.416050+00:00 app[web.1]: followers: 1,
+2020-07-11T18:46:00.416050+00:00 app[web.1]: following: 1,
+2020-07-11T18:46:00.416051+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:46:00.416051+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:46:00.416051+00:00 app[web.1]: }
+2020-07-11T18:46:00.416052+00:00 app[web.1]: }
+2020-07-11T18:46:00.622696+00:00 app[web.1]: GET / 200 211.928 ms - 8923
+2020-07-11T18:46:00.628580+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=2d029421-7b84-4320-bdeb-ce442cff1e5f fwd="106.209.218.189" dyno=web.1 connect=0ms service=219ms status=200 bytes=9320 protocol=https
+2020-07-11T18:46:00.992043+00:00 app[web.1]: GET /stylesheets/style.css 304 1.548 ms - -
+2020-07-11T18:46:00.993079+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=7de8c8cc-079c-4b3f-8058-635dd3d7db11 fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:46:01.351457+00:00 app[web.1]: GET /images/logo.png 304 1.104 ms - -
+2020-07-11T18:46:01.352642+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=89bf937d-7380-407d-8afa-95d150665f3a fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:46:04.551386+00:00 app[web.1]: {
+2020-07-11T18:46:04.551400+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:46:04.551401+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:46:04.551402+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:46:04.551402+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:46:04.551403+00:00 app[web.1]: photos: [
+2020-07-11T18:46:04.551403+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:46:04.551404+00:00 app[web.1]: ],
+2020-07-11T18:46:04.551404+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:46:04.551405+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:46:04.551406+00:00 app[web.1]: _json: {
+2020-07-11T18:46:04.551406+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:46:04.551406+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:46:04.551407+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:46:04.551407+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:46:04.551408+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:46:04.551408+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:46:04.551409+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:46:04.551409+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:46:04.551410+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:46:04.551410+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:46:04.551410+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:46:04.551411+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:46:04.551411+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:46:04.551412+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:46:04.551412+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:46:04.551412+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:46:04.551413+00:00 app[web.1]: type: 'User',
+2020-07-11T18:46:04.551413+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:46:04.551414+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:46:04.551414+00:00 app[web.1]: company: null,
+2020-07-11T18:46:04.551415+00:00 app[web.1]: blog: '',
+2020-07-11T18:46:04.551415+00:00 app[web.1]: location: null,
+2020-07-11T18:46:04.551415+00:00 app[web.1]: email: null,
+2020-07-11T18:46:04.551416+00:00 app[web.1]: hireable: null,
+2020-07-11T18:46:04.551416+00:00 app[web.1]: bio: null,
+2020-07-11T18:46:04.551417+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:46:04.551417+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:46:04.551417+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:46:04.551418+00:00 app[web.1]: followers: 1,
+2020-07-11T18:46:04.551418+00:00 app[web.1]: following: 1,
+2020-07-11T18:46:04.551418+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:46:04.551419+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:46:04.551419+00:00 app[web.1]: }
+2020-07-11T18:46:04.551420+00:00 app[web.1]: }
+2020-07-11T18:46:04.552759+00:00 app[web.1]: GET /logout 302 2.556 ms - 46
+2020-07-11T18:46:04.555956+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=57d0fc34-8235-4126-b751-195e43db1fb1 fwd="106.209.218.189" dyno=web.1 connect=0ms service=4ms status=302 bytes=427 protocol=https
+2020-07-11T18:46:04.872003+00:00 app[web.1]: {
+2020-07-11T18:46:04.872024+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:46:04.872025+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:46:04.872026+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:46:04.872026+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:46:04.872026+00:00 app[web.1]: photos: [
+2020-07-11T18:46:04.872027+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:46:04.872028+00:00 app[web.1]: ],
+2020-07-11T18:46:04.872028+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:46:04.872030+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:46:04.872030+00:00 app[web.1]: _json: {
+2020-07-11T18:46:04.872031+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:46:04.872031+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:46:04.872031+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:46:04.872033+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:46:04.872033+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:46:04.872033+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:46:04.872034+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:46:04.872034+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:46:04.872035+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:46:04.872036+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:46:04.872036+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:46:04.872037+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:46:04.872037+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:46:04.872037+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:46:04.872038+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:46:04.872038+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:46:04.872039+00:00 app[web.1]: type: 'User',
+2020-07-11T18:46:04.872039+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:46:04.872039+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:46:04.872040+00:00 app[web.1]: company: null,
+2020-07-11T18:46:04.872040+00:00 app[web.1]: blog: '',
+2020-07-11T18:46:04.872041+00:00 app[web.1]: location: null,
+2020-07-11T18:46:04.872041+00:00 app[web.1]: email: null,
+2020-07-11T18:46:04.872041+00:00 app[web.1]: hireable: null,
+2020-07-11T18:46:04.872042+00:00 app[web.1]: bio: null,
+2020-07-11T18:46:04.872042+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:46:04.872043+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:46:04.872043+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:46:04.872043+00:00 app[web.1]: followers: 1,
+2020-07-11T18:46:04.872044+00:00 app[web.1]: following: 1,
+2020-07-11T18:46:04.872044+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:46:04.872045+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:46:04.872045+00:00 app[web.1]: }
+2020-07-11T18:46:04.872045+00:00 app[web.1]: }
+2020-07-11T18:46:05.073627+00:00 app[web.1]: GET / 304 203.342 ms - -
+2020-07-11T18:46:05.088978+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=05f3fbdf-4639-4aed-84fa-4bd39567d81e fwd="106.209.218.189" dyno=web.1 connect=0ms service=219ms status=304 bytes=345 protocol=https
+2020-07-11T18:46:05.457188+00:00 app[web.1]: GET /stylesheets/style.css 304 5.243 ms - -
+2020-07-11T18:46:05.458170+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=fd2f29f2-23ab-4244-bc78-db895a1b3531 fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=304 bytes=431 protocol=https
+2020-07-11T18:46:05.815918+00:00 app[web.1]: GET /images/logo.png 304 0.898 ms - -
+2020-07-11T18:46:05.816782+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=ce6ccc5d-c775-498d-87dc-40b75f2b6854 fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:46:11.173206+00:00 app[web.1]: {
+2020-07-11T18:46:11.173229+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:46:11.173230+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:46:11.173230+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:46:11.173231+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:46:11.173231+00:00 app[web.1]: photos: [
+2020-07-11T18:46:11.173232+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:46:11.173233+00:00 app[web.1]: ],
+2020-07-11T18:46:11.173233+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:46:11.173234+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:46:11.173235+00:00 app[web.1]: _json: {
+2020-07-11T18:46:11.173235+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:46:11.173235+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:46:11.173236+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:46:11.173237+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:46:11.173237+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:46:11.173238+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:46:11.173238+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:46:11.173239+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:46:11.173240+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:46:11.173240+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:46:11.173241+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:46:11.173241+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:46:11.173242+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:46:11.173242+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:46:11.173242+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:46:11.173243+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:46:11.173243+00:00 app[web.1]: type: 'User',
+2020-07-11T18:46:11.173243+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:46:11.173244+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:46:11.173244+00:00 app[web.1]: company: null,
+2020-07-11T18:46:11.173245+00:00 app[web.1]: blog: '',
+2020-07-11T18:46:11.173245+00:00 app[web.1]: location: null,
+2020-07-11T18:46:11.173245+00:00 app[web.1]: email: null,
+2020-07-11T18:46:11.173246+00:00 app[web.1]: hireable: null,
+2020-07-11T18:46:11.173246+00:00 app[web.1]: bio: null,
+2020-07-11T18:46:11.173246+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:46:11.173247+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:46:11.173247+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:46:11.173248+00:00 app[web.1]: followers: 1,
+2020-07-11T18:46:11.173248+00:00 app[web.1]: following: 1,
+2020-07-11T18:46:11.173248+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:46:11.173249+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:46:11.173249+00:00 app[web.1]: }
+2020-07-11T18:46:11.173249+00:00 app[web.1]: }
+2020-07-11T18:46:11.378423+00:00 app[web.1]: GET / 304 203.199 ms - -
+2020-07-11T18:46:11.379155+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=d63935bc-31b7-40ca-8af5-d8134f969f4b fwd="106.209.218.189" dyno=web.1 connect=0ms service=209ms status=304 bytes=345 protocol=https
+2020-07-11T18:46:11.754310+00:00 app[web.1]: GET /stylesheets/style.css 304 0.951 ms - -
+2020-07-11T18:46:11.756763+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=5110bc33-ca76-45b3-bc8e-a8190f6c2135 fwd="106.209.218.189" dyno=web.1 connect=2ms service=4ms status=304 bytes=431 protocol=https
+2020-07-11T18:46:12.140848+00:00 app[web.1]: GET /images/logo.png 304 0.970 ms - -
+2020-07-11T18:46:12.142070+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=31c6e6d6-00b8-44c4-9bd4-46c9a1cded44 fwd="106.209.218.189" dyno=web.1 connect=3ms service=5ms status=304 bytes=431 protocol=https
+2020-07-11T18:48:18.141790+00:00 app[web.1]: GET /stylesheets/style.css 304 1.593 ms - -
+2020-07-11T18:48:18.143359+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=d393032c-ba4e-4d73-85f8-137c5c9362c3 fwd="106.209.218.189" dyno=web.1 connect=1ms service=4ms status=304 bytes=431 protocol=https
+2020-07-11T18:48:22.789282+00:00 app[web.1]: {
+2020-07-11T18:48:22.789291+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:48:22.789292+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:48:22.789292+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:48:22.789293+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:48:22.789293+00:00 app[web.1]: photos: [
+2020-07-11T18:48:22.789296+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:48:22.789297+00:00 app[web.1]: ],
+2020-07-11T18:48:22.789297+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:48:22.789299+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:22:31Z"}',
+2020-07-11T18:48:22.789299+00:00 app[web.1]: _json: {
+2020-07-11T18:48:22.789300+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:48:22.789300+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:48:22.789300+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:48:22.789301+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:48:22.789301+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:48:22.789303+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:48:22.789303+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:48:22.789303+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:48:22.789304+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:48:22.789304+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:48:22.789305+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:48:22.789305+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:48:22.789306+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:48:22.789306+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:48:22.789306+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:48:22.789307+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:48:22.789307+00:00 app[web.1]: type: 'User',
+2020-07-11T18:48:22.789307+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:48:22.789308+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:48:22.789308+00:00 app[web.1]: company: null,
+2020-07-11T18:48:22.789309+00:00 app[web.1]: blog: '',
+2020-07-11T18:48:22.789309+00:00 app[web.1]: location: null,
+2020-07-11T18:48:22.789309+00:00 app[web.1]: email: null,
+2020-07-11T18:48:22.789310+00:00 app[web.1]: hireable: null,
+2020-07-11T18:48:22.789310+00:00 app[web.1]: bio: null,
+2020-07-11T18:48:22.789311+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:48:22.789311+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:48:22.789311+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:48:22.789312+00:00 app[web.1]: followers: 1,
+2020-07-11T18:48:22.789312+00:00 app[web.1]: following: 1,
+2020-07-11T18:48:22.789313+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:48:22.789313+00:00 app[web.1]: updated_at: '2020-07-11T18:22:31Z'
+2020-07-11T18:48:22.789313+00:00 app[web.1]: }
+2020-07-11T18:48:22.789314+00:00 app[web.1]: }
+2020-07-11T18:48:22.992902+00:00 app[web.1]: GET / 304 204.791 ms - -
+2020-07-11T18:48:22.994077+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=a7b7d4f7-d997-4814-b070-5c422424a7f1 fwd="106.209.218.189" dyno=web.1 connect=1ms service=209ms status=304 bytes=345 protocol=https
+2020-07-11T18:48:23.373913+00:00 app[web.1]: GET /stylesheets/style.css 304 1.024 ms - -
+2020-07-11T18:48:23.375299+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=3a175aba-4b49-421a-a9ee-abb16f058d76 fwd="106.209.218.189" dyno=web.1 connect=1ms service=7ms status=304 bytes=431 protocol=https
+2020-07-11T18:48:33.180255+00:00 app[web.1]: GET / 200 200.954 ms - 8850
+2020-07-11T18:48:33.182381+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=17ce1814-66d1-4bfc-a280-82fed9a3166e fwd="106.209.218.189" dyno=web.1 connect=1ms service=204ms status=200 bytes=9371 protocol=https
+2020-07-11T18:48:33.559701+00:00 app[web.1]: GET /stylesheets/style.css 200 1.132 ms - 4343
+2020-07-11T18:48:33.561227+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=dca64419-ea1f-47ed-aeba-876683eeb071 fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=200 bytes=4825 protocol=https
+2020-07-11T18:48:34.587651+00:00 app[web.1]: GET /images/logo.png 200 2.779 ms - 31541
+2020-07-11T18:48:34.590486+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=f48394b8-28a9-4764-9fa9-e9609d6b3de3 fwd="106.209.218.189" dyno=web.1 connect=1ms service=7ms status=200 bytes=32010 protocol=https
+2020-07-11T18:48:36.434799+00:00 app[web.1]: GET /stylesheets/style.css 304 0.780 ms - -
+2020-07-11T18:48:36.436386+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=211d11ba-0d03-4978-b3db-f40e44e0a803 fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:48:44.703523+00:00 app[web.1]: GET /login 302 2.067 ms - 0
+2020-07-11T18:48:44.704844+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=ae1928b3-eb6d-483a-a186-1ce2dae27ae9 fwd="106.209.218.189" dyno=web.1 connect=1ms service=7ms status=302 bytes=475 protocol=https
+2020-07-11T18:48:59.017815+00:00 app[web.1]: GET /auth?code=4d9645996cd57ef36abb 302 278.616 ms - 46
+2020-07-11T18:48:59.019972+00:00 heroku[router]: at=info method=GET path="/auth?code=4d9645996cd57ef36abb" host=samrat-news.herokuapp.com request_id=1aa410fb-848f-4744-aa14-dd4e41c9dea6 fwd="106.209.218.189" dyno=web.1 connect=1ms service=282ms status=302 bytes=427 protocol=https
+2020-07-11T18:48:59.319615+00:00 app[web.1]: {
+2020-07-11T18:48:59.319624+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:48:59.319625+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:48:59.319625+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:48:59.319625+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:48:59.319626+00:00 app[web.1]: photos: [
+2020-07-11T18:48:59.319627+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:48:59.319627+00:00 app[web.1]: ],
+2020-07-11T18:48:59.319627+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:48:59.319650+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:48:57Z"}',
+2020-07-11T18:48:59.319650+00:00 app[web.1]: _json: {
+2020-07-11T18:48:59.319651+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:48:59.319651+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:48:59.319651+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:48:59.319652+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:48:59.319652+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:48:59.319653+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:48:59.319653+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:48:59.319654+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:48:59.319655+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:48:59.319655+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:48:59.319655+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:48:59.319656+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:48:59.319656+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:48:59.319657+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:48:59.319657+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:48:59.319657+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:48:59.319658+00:00 app[web.1]: type: 'User',
+2020-07-11T18:48:59.319658+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:48:59.319658+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:48:59.319659+00:00 app[web.1]: company: null,
+2020-07-11T18:48:59.319659+00:00 app[web.1]: blog: '',
+2020-07-11T18:48:59.319659+00:00 app[web.1]: location: null,
+2020-07-11T18:48:59.319660+00:00 app[web.1]: email: null,
+2020-07-11T18:48:59.319660+00:00 app[web.1]: hireable: null,
+2020-07-11T18:48:59.319660+00:00 app[web.1]: bio: null,
+2020-07-11T18:48:59.319661+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:48:59.319661+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:48:59.319662+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:48:59.319662+00:00 app[web.1]: followers: 1,
+2020-07-11T18:48:59.319662+00:00 app[web.1]: following: 1,
+2020-07-11T18:48:59.319663+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:48:59.319663+00:00 app[web.1]: updated_at: '2020-07-11T18:48:57Z'
+2020-07-11T18:48:59.319663+00:00 app[web.1]: }
+2020-07-11T18:48:59.319664+00:00 app[web.1]: }
+2020-07-11T18:48:59.527529+00:00 app[web.1]: GET / 200 208.556 ms - 8923
+2020-07-11T18:48:59.529447+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=8b7716e7-dc6c-4638-a8c3-9af57014404b fwd="106.209.218.189" dyno=web.1 connect=1ms service=211ms status=200 bytes=9320 protocol=https
+2020-07-11T18:49:00.899636+00:00 app[web.1]: GET /stylesheets/style.css 304 0.642 ms - -
+2020-07-11T18:49:00.901166+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=8d49e40d-9538-4b18-8468-3ba03636d1da fwd="106.209.218.189" dyno=web.1 connect=1ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:49:01.285220+00:00 app[web.1]: GET /images/logo.png 304 0.772 ms - -
+2020-07-11T18:49:01.292769+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=78280056-8f67-4695-b4f6-156a56fd596c fwd="106.209.218.189" dyno=web.1 connect=1ms service=9ms status=304 bytes=431 protocol=https
+2020-07-11T18:49:09.816122+00:00 app[web.1]: {
+2020-07-11T18:49:09.816135+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:49:09.816136+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:49:09.816137+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:49:09.816137+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:49:09.816138+00:00 app[web.1]: photos: [
+2020-07-11T18:49:09.816139+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:49:09.816139+00:00 app[web.1]: ],
+2020-07-11T18:49:09.816140+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:49:09.816159+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:48:57Z"}',
+2020-07-11T18:49:09.816160+00:00 app[web.1]: _json: {
+2020-07-11T18:49:09.816161+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:49:09.816161+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:49:09.816161+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:49:09.816162+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:49:09.816162+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:49:09.816163+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:49:09.816163+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:49:09.816164+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:49:09.816164+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:49:09.816165+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:49:09.816165+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:49:09.816165+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:49:09.816166+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:49:09.816166+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:49:09.816167+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:49:09.816167+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:49:09.816167+00:00 app[web.1]: type: 'User',
+2020-07-11T18:49:09.816168+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:49:09.816168+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:49:09.816168+00:00 app[web.1]: company: null,
+2020-07-11T18:49:09.816169+00:00 app[web.1]: blog: '',
+2020-07-11T18:49:09.816169+00:00 app[web.1]: location: null,
+2020-07-11T18:49:09.816170+00:00 app[web.1]: email: null,
+2020-07-11T18:49:09.816170+00:00 app[web.1]: hireable: null,
+2020-07-11T18:49:09.816170+00:00 app[web.1]: bio: null,
+2020-07-11T18:49:09.816171+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:49:09.816171+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:49:09.816171+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:49:09.816172+00:00 app[web.1]: followers: 1,
+2020-07-11T18:49:09.816172+00:00 app[web.1]: following: 1,
+2020-07-11T18:49:09.816172+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:49:09.816173+00:00 app[web.1]: updated_at: '2020-07-11T18:48:57Z'
+2020-07-11T18:49:09.816173+00:00 app[web.1]: }
+2020-07-11T18:49:09.816173+00:00 app[web.1]: }
+2020-07-11T18:49:09.817633+00:00 app[web.1]: GET /logout 302 4.948 ms - 46
+2020-07-11T18:49:09.819117+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=eaf2dc20-081e-4f3d-a74d-95cc9936689f fwd="106.209.218.189" dyno=web.1 connect=1ms service=11ms status=302 bytes=427 protocol=https
+2020-07-11T18:49:10.127904+00:00 app[web.1]: {
+2020-07-11T18:49:10.127915+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:49:10.127917+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:49:10.127917+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:49:10.127917+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:49:10.127918+00:00 app[web.1]: photos: [
+2020-07-11T18:49:10.127918+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:49:10.127919+00:00 app[web.1]: ],
+2020-07-11T18:49:10.127919+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:49:10.127921+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:48:57Z"}',
+2020-07-11T18:49:10.127921+00:00 app[web.1]: _json: {
+2020-07-11T18:49:10.127921+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:49:10.127922+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:49:10.127922+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:49:10.127923+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:49:10.127923+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:49:10.127924+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:49:10.127924+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:49:10.127924+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:49:10.127925+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:49:10.127926+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:49:10.127926+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:49:10.127927+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:49:10.127927+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:49:10.127927+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:49:10.127928+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:49:10.127928+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:49:10.127929+00:00 app[web.1]: type: 'User',
+2020-07-11T18:49:10.127929+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:49:10.127930+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:49:10.127930+00:00 app[web.1]: company: null,
+2020-07-11T18:49:10.127930+00:00 app[web.1]: blog: '',
+2020-07-11T18:49:10.127931+00:00 app[web.1]: location: null,
+2020-07-11T18:49:10.127931+00:00 app[web.1]: email: null,
+2020-07-11T18:49:10.127931+00:00 app[web.1]: hireable: null,
+2020-07-11T18:49:10.127932+00:00 app[web.1]: bio: null,
+2020-07-11T18:49:10.127932+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:49:10.127932+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:49:10.127933+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:49:10.127933+00:00 app[web.1]: followers: 1,
+2020-07-11T18:49:10.127933+00:00 app[web.1]: following: 1,
+2020-07-11T18:49:10.127934+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:49:10.127934+00:00 app[web.1]: updated_at: '2020-07-11T18:48:57Z'
+2020-07-11T18:49:10.127935+00:00 app[web.1]: }
+2020-07-11T18:49:10.127935+00:00 app[web.1]: }
+2020-07-11T18:49:10.331187+00:00 app[web.1]: GET / 304 204.537 ms - -
+2020-07-11T18:49:10.332443+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=76a7f929-992f-42d7-a98d-61b9b5b1f40b fwd="106.209.218.189" dyno=web.1 connect=1ms service=209ms status=304 bytes=345 protocol=https
+2020-07-11T18:49:10.679868+00:00 app[web.1]: GET /stylesheets/style.css 304 1.040 ms - -
+2020-07-11T18:49:10.681144+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=964fe9c7-4b90-49a3-920a-2c9a92600717 fwd="106.209.218.189" dyno=web.1 connect=1ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:49:11.031171+00:00 app[web.1]: GET /images/logo.png 304 0.664 ms - -
+2020-07-11T18:49:11.033776+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=866db20b-5363-4c48-b9ee-6bd8898abff0 fwd="106.209.218.189" dyno=web.1 connect=1ms service=5ms status=304 bytes=431 protocol=https
+2020-07-11T18:50:48.000000+00:00 app[api]: Build started by user samrat.mallick1@gmail.com
+2020-07-11T18:51:05.000000+00:00 app[api]: Build succeeded
+2020-07-11T18:51:05.063912+00:00 app[api]: Release v56 created by user samrat.mallick1@gmail.com
+2020-07-11T18:51:05.063912+00:00 app[api]: Deploy 6e38a1f4 by user samrat.mallick1@gmail.com
+2020-07-11T18:51:05.515963+00:00 heroku[web.1]: Restarting
+2020-07-11T18:51:05.529192+00:00 heroku[web.1]: State changed from up to starting
+2020-07-11T18:51:06.796074+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-07-11T18:51:07.003418+00:00 heroku[web.1]: Process exited with status 143
+2020-07-11T18:51:07.617865+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-07-11T18:51:10.229004+00:00 app[web.1]: 
+2020-07-11T18:51:10.229101+00:00 app[web.1]: > hacker-news@0.0.0 start /app
+2020-07-11T18:51:10.229102+00:00 app[web.1]: > node ./bin/www
+2020-07-11T18:51:10.229102+00:00 app[web.1]: 
+2020-07-11T18:51:11.114286+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2020-07-11T18:51:11.114312+00:00 app[web.1]: designed for a production environment, as it will leak
+2020-07-11T18:51:11.114313+00:00 app[web.1]: memory, and will not scale past a single process.
+2020-07-11T18:51:11.472676+00:00 heroku[web.1]: State changed from starting to up
+2020-07-11T18:51:12.310462+00:00 app[web.1]: DataBase Connection successful
+2020-07-11T18:51:43.136274+00:00 app[web.1]: GET / 200 1365.558 ms - 8850
+2020-07-11T18:51:43.137217+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=8476bcb1-680b-4720-9f7f-309cfc58157f fwd="106.209.218.189" dyno=web.1 connect=0ms service=1375ms status=200 bytes=9375 protocol=https
+2020-07-11T18:51:43.529412+00:00 app[web.1]: GET /stylesheets/style.css 200 12.659 ms - 4343
+2020-07-11T18:51:43.531470+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=5a699203-2b17-4e54-afff-bccf87f6dc50 fwd="106.209.218.189" dyno=web.1 connect=1ms service=30ms status=200 bytes=4825 protocol=https
+2020-07-11T18:51:44.550998+00:00 app[web.1]: GET /images/logo.png 200 0.979 ms - 31541
+2020-07-11T18:51:44.554796+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=617c6df9-eb9b-4a89-bc5a-58c4bf5945d4 fwd="106.209.218.189" dyno=web.1 connect=0ms service=4ms status=200 bytes=32010 protocol=https
+2020-07-11T18:51:49.588028+00:00 app[web.1]: GET /login 302 3.033 ms - 0
+2020-07-11T18:51:49.591269+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=8d5ce53c-aa83-43f2-99ae-0a6b91863978 fwd="106.209.218.189" dyno=web.1 connect=1ms service=4ms status=302 bytes=475 protocol=https
+2020-07-11T18:52:06.316844+00:00 app[web.1]: GET /auth?code=9c51bcd2e0de52fe0d1c 302 252.927 ms - 46
+2020-07-11T18:52:06.320237+00:00 heroku[router]: at=info method=GET path="/auth?code=9c51bcd2e0de52fe0d1c" host=samrat-news.herokuapp.com request_id=7a219e19-4686-417f-b54d-45fa1c609a97 fwd="106.209.218.189" dyno=web.1 connect=0ms service=256ms status=302 bytes=427 protocol=https
+2020-07-11T18:52:06.643487+00:00 app[web.1]: {
+2020-07-11T18:52:06.643504+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:52:06.643506+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:52:06.643507+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:52:06.643507+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:52:06.643507+00:00 app[web.1]: photos: [
+2020-07-11T18:52:06.643508+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:52:06.643508+00:00 app[web.1]: ],
+2020-07-11T18:52:06.643508+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:52:06.643513+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:52:04Z"}',
+2020-07-11T18:52:06.643514+00:00 app[web.1]: _json: {
+2020-07-11T18:52:06.643514+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:52:06.643514+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:52:06.643515+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:52:06.643515+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:52:06.643515+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:52:06.643516+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:52:06.643516+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:52:06.643517+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:52:06.643517+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:52:06.643518+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:52:06.643518+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:52:06.643519+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:52:06.643519+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:52:06.643519+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:52:06.643520+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:52:06.643520+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:52:06.643520+00:00 app[web.1]: type: 'User',
+2020-07-11T18:52:06.643521+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:52:06.643521+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:52:06.643521+00:00 app[web.1]: company: null,
+2020-07-11T18:52:06.643521+00:00 app[web.1]: blog: '',
+2020-07-11T18:52:06.643522+00:00 app[web.1]: location: null,
+2020-07-11T18:52:06.643522+00:00 app[web.1]: email: null,
+2020-07-11T18:52:06.643522+00:00 app[web.1]: hireable: null,
+2020-07-11T18:52:06.643523+00:00 app[web.1]: bio: null,
+2020-07-11T18:52:06.643523+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:52:06.643523+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:52:06.643524+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:52:06.643524+00:00 app[web.1]: followers: 1,
+2020-07-11T18:52:06.643524+00:00 app[web.1]: following: 1,
+2020-07-11T18:52:06.643525+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:52:06.643525+00:00 app[web.1]: updated_at: '2020-07-11T18:52:04Z'
+2020-07-11T18:52:06.643525+00:00 app[web.1]: }
+2020-07-11T18:52:06.643525+00:00 app[web.1]: }
+2020-07-11T18:52:06.836926+00:00 app[web.1]: GET / 200 196.934 ms - 8923
+2020-07-11T18:52:06.840445+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=b2769d1d-5c88-4573-a6ce-ff919aca1f68 fwd="106.209.218.189" dyno=web.1 connect=0ms service=199ms status=200 bytes=9320 protocol=https
+2020-07-11T18:52:07.225159+00:00 app[web.1]: GET /stylesheets/style.css 304 1.112 ms - -
+2020-07-11T18:52:07.228185+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=276ee68b-da0c-4fe1-b040-60107ae01a13 fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:52:07.652141+00:00 app[web.1]: GET /images/logo.png 304 0.628 ms - -
+2020-07-11T18:52:07.655133+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=033eb86e-d782-4ad9-8241-cc4b5dba3a95 fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:52:10.891452+00:00 app[web.1]: {
+2020-07-11T18:52:10.891477+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:52:10.891478+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:52:10.891478+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:52:10.891479+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:52:10.891479+00:00 app[web.1]: photos: [
+2020-07-11T18:52:10.891480+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:52:10.891480+00:00 app[web.1]: ],
+2020-07-11T18:52:10.891481+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:52:10.891482+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:52:04Z"}',
+2020-07-11T18:52:10.891482+00:00 app[web.1]: _json: {
+2020-07-11T18:52:10.891483+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:52:10.891483+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:52:10.891483+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:52:10.891484+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:52:10.891484+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:52:10.891484+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:52:10.891485+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:52:10.891487+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:52:10.891488+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:52:10.891488+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:52:10.891488+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:52:10.891489+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:52:10.891489+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:52:10.891489+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:52:10.891490+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:52:10.891490+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:52:10.891490+00:00 app[web.1]: type: 'User',
+2020-07-11T18:52:10.891491+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:52:10.891491+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:52:10.891491+00:00 app[web.1]: company: null,
+2020-07-11T18:52:10.891492+00:00 app[web.1]: blog: '',
+2020-07-11T18:52:10.891492+00:00 app[web.1]: location: null,
+2020-07-11T18:52:10.891492+00:00 app[web.1]: email: null,
+2020-07-11T18:52:10.891493+00:00 app[web.1]: hireable: null,
+2020-07-11T18:52:10.891493+00:00 app[web.1]: bio: null,
+2020-07-11T18:52:10.891493+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:52:10.891494+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:52:10.891494+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:52:10.891494+00:00 app[web.1]: followers: 1,
+2020-07-11T18:52:10.891495+00:00 app[web.1]: following: 1,
+2020-07-11T18:52:10.891495+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:52:10.891495+00:00 app[web.1]: updated_at: '2020-07-11T18:52:04Z'
+2020-07-11T18:52:10.891496+00:00 app[web.1]: }
+2020-07-11T18:52:10.891496+00:00 app[web.1]: }
+2020-07-11T18:52:10.892577+00:00 app[web.1]: GET /logout 302 2.097 ms - 46
+2020-07-11T18:52:10.899884+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=b6614d2f-75b8-4a38-bdf0-db836f648f8e fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=302 bytes=427 protocol=https
+2020-07-11T18:52:11.201752+00:00 app[web.1]: {
+2020-07-11T18:52:11.201769+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:52:11.201769+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:52:11.201770+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:52:11.201770+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:52:11.201770+00:00 app[web.1]: photos: [
+2020-07-11T18:52:11.201770+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:52:11.201771+00:00 app[web.1]: ],
+2020-07-11T18:52:11.201771+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:52:11.201777+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:52:04Z"}',
+2020-07-11T18:52:11.201777+00:00 app[web.1]: _json: {
+2020-07-11T18:52:11.201777+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:52:11.201778+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:52:11.201778+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:52:11.201779+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:52:11.201779+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:52:11.201779+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:52:11.201780+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:52:11.201780+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:52:11.201780+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:52:11.201781+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:52:11.201781+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:52:11.201781+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:52:11.201781+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:52:11.201782+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:52:11.201782+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:52:11.201782+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:52:11.201782+00:00 app[web.1]: type: 'User',
+2020-07-11T18:52:11.201783+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:52:11.201783+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:52:11.201783+00:00 app[web.1]: company: null,
+2020-07-11T18:52:11.201783+00:00 app[web.1]: blog: '',
+2020-07-11T18:52:11.201784+00:00 app[web.1]: location: null,
+2020-07-11T18:52:11.201784+00:00 app[web.1]: email: null,
+2020-07-11T18:52:11.201784+00:00 app[web.1]: hireable: null,
+2020-07-11T18:52:11.201784+00:00 app[web.1]: bio: null,
+2020-07-11T18:52:11.201784+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:52:11.201785+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:52:11.201785+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:52:11.201785+00:00 app[web.1]: followers: 1,
+2020-07-11T18:52:11.201785+00:00 app[web.1]: following: 1,
+2020-07-11T18:52:11.201785+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:52:11.201785+00:00 app[web.1]: updated_at: '2020-07-11T18:52:04Z'
+2020-07-11T18:52:11.201786+00:00 app[web.1]: }
+2020-07-11T18:52:11.201786+00:00 app[web.1]: }
+2020-07-11T18:52:11.394208+00:00 app[web.1]: GET / 304 193.591 ms - -
+2020-07-11T18:52:11.397372+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=c10948f5-e672-4aad-830a-3a64878f8b4d fwd="106.209.218.189" dyno=web.1 connect=0ms service=195ms status=304 bytes=345 protocol=https
+2020-07-11T18:52:11.760198+00:00 app[web.1]: GET /stylesheets/style.css 304 0.659 ms - -
+2020-07-11T18:52:11.763643+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=2edcf3e6-bcd8-4286-93f9-3e958b2a286c fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:52:12.100156+00:00 app[web.1]: GET /images/logo.png 304 0.657 ms - -
+2020-07-11T18:52:12.103044+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=c1457735-dadc-4294-a466-f3822d97e1ac fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:57:16.000000+00:00 app[api]: Build started by user samrat.mallick1@gmail.com
+2020-07-11T18:57:34.449395+00:00 app[api]: Deploy aebd1bc5 by user samrat.mallick1@gmail.com
+2020-07-11T18:57:34.449395+00:00 app[api]: Release v57 created by user samrat.mallick1@gmail.com
+2020-07-11T18:57:35.000000+00:00 app[api]: Build succeeded
+2020-07-11T18:57:36.861080+00:00 heroku[web.1]: Restarting
+2020-07-11T18:57:36.874780+00:00 heroku[web.1]: State changed from up to starting
+2020-07-11T18:57:37.996531+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2020-07-11T18:57:38.084650+00:00 heroku[web.1]: Process exited with status 143
+2020-07-11T18:57:38.966727+00:00 heroku[web.1]: Starting process with command `npm start`
+2020-07-11T18:57:41.146832+00:00 app[web.1]: 
+2020-07-11T18:57:41.146888+00:00 app[web.1]: > hacker-news@0.0.0 start /app
+2020-07-11T18:57:41.146889+00:00 app[web.1]: > node ./bin/www
+2020-07-11T18:57:41.146889+00:00 app[web.1]: 
+2020-07-11T18:57:41.987777+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2020-07-11T18:57:41.987809+00:00 app[web.1]: designed for a production environment, as it will leak
+2020-07-11T18:57:41.987810+00:00 app[web.1]: memory, and will not scale past a single process.
+2020-07-11T18:57:42.319496+00:00 heroku[web.1]: State changed from starting to up
+2020-07-11T18:57:43.227130+00:00 app[web.1]: DataBase Connection successful
+2020-07-11T18:58:59.124794+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=63032da9-254c-4a6c-b4da-230b8c246942 fwd="106.209.218.189" dyno=web.1 connect=0ms service=1436ms status=200 bytes=9377 protocol=https
+2020-07-11T18:58:59.126291+00:00 app[web.1]: GET / 200 1424.245 ms - 8850
+2020-07-11T18:58:59.495184+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=bbad6906-6d8f-47b9-99fb-6dc16123a33d fwd="106.209.218.189" dyno=web.1 connect=1ms service=5ms status=200 bytes=4825 protocol=https
+2020-07-11T18:58:59.495607+00:00 app[web.1]: GET /stylesheets/style.css 200 3.391 ms - 4343
+2020-07-11T18:59:00.633451+00:00 app[web.1]: GET /images/logo.png 200 1.552 ms - 31541
+2020-07-11T18:59:00.634197+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=fb6ecd36-80af-4ad4-ab93-e010d532c7e8 fwd="106.209.218.189" dyno=web.1 connect=0ms service=6ms status=200 bytes=32010 protocol=https
+2020-07-11T18:59:11.752626+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=43d34b54-5d94-4ab4-9fe8-1f3cf00bf493 fwd="106.209.218.189" dyno=web.1 connect=0ms service=4ms status=302 bytes=475 protocol=https
+2020-07-11T18:59:11.752973+00:00 app[web.1]: GET /login 302 2.764 ms - 0
+2020-07-11T18:59:24.129149+00:00 heroku[router]: at=info method=GET path="/auth?code=7a8c909a67941a5a0d79" host=samrat-news.herokuapp.com request_id=0c2ec723-00ea-4dde-a8a9-a64ce5620c7c fwd="106.209.218.189" dyno=web.1 connect=0ms service=301ms status=302 bytes=427 protocol=https
+2020-07-11T18:59:24.129450+00:00 app[web.1]: GET /auth?code=7a8c909a67941a5a0d79 302 295.857 ms - 46
+2020-07-11T18:59:25.321587+00:00 app[web.1]: {
+2020-07-11T18:59:25.321602+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:59:25.321623+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:59:25.321624+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:59:25.321624+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:59:25.321625+00:00 app[web.1]: photos: [
+2020-07-11T18:59:25.321627+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:59:25.321627+00:00 app[web.1]: ],
+2020-07-11T18:59:25.321627+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:59:25.321631+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:59:22Z"}',
+2020-07-11T18:59:25.321631+00:00 app[web.1]: _json: {
+2020-07-11T18:59:25.321632+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:59:25.321632+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:59:25.321632+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:59:25.321633+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:59:25.321633+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:59:25.321634+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:59:25.321634+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:59:25.321635+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:59:25.321645+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:59:25.321645+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:59:25.321646+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:59:25.321646+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:59:25.321647+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:59:25.321647+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:59:25.321648+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:59:25.321648+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:59:25.321649+00:00 app[web.1]: type: 'User',
+2020-07-11T18:59:25.321649+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:59:25.321650+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:59:25.321650+00:00 app[web.1]: company: null,
+2020-07-11T18:59:25.321651+00:00 app[web.1]: blog: '',
+2020-07-11T18:59:25.321651+00:00 app[web.1]: location: null,
+2020-07-11T18:59:25.321652+00:00 app[web.1]: email: null,
+2020-07-11T18:59:25.321652+00:00 app[web.1]: hireable: null,
+2020-07-11T18:59:25.321652+00:00 app[web.1]: bio: null,
+2020-07-11T18:59:25.321653+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:59:25.321653+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:59:25.321654+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:59:25.321654+00:00 app[web.1]: followers: 1,
+2020-07-11T18:59:25.321655+00:00 app[web.1]: following: 1,
+2020-07-11T18:59:25.321655+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:59:25.321655+00:00 app[web.1]: updated_at: '2020-07-11T18:59:22Z'
+2020-07-11T18:59:25.321656+00:00 app[web.1]: }
+2020-07-11T18:59:25.321656+00:00 app[web.1]: }
+2020-07-11T18:59:25.518524+00:00 app[web.1]: GET / 200 201.898 ms - 8923
+2020-07-11T18:59:25.524155+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=e3ce1019-eca3-458d-a6cf-a20ae1f0faff fwd="106.209.218.189" dyno=web.1 connect=1ms service=206ms status=200 bytes=9320 protocol=https
+2020-07-11T18:59:25.879835+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=c7a1c7fa-46df-4b94-9a06-7b6a62ea0f42 fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=304 bytes=431 protocol=https
+2020-07-11T18:59:25.880286+00:00 app[web.1]: GET /stylesheets/style.css 304 5.388 ms - -
+2020-07-11T18:59:26.235598+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=1c078bb2-8a89-4a8a-9fd6-fc8e7db5042b fwd="106.209.218.189" dyno=web.1 connect=1ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:59:26.235693+00:00 app[web.1]: GET /images/logo.png 304 0.654 ms - -
+2020-07-11T18:59:29.335908+00:00 app[web.1]: {
+2020-07-11T18:59:29.335921+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:59:29.335923+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:59:29.335923+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:59:29.335923+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.335924+00:00 app[web.1]: photos: [
+2020-07-11T18:59:29.335925+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:59:29.335927+00:00 app[web.1]: ],
+2020-07-11T18:59:29.335927+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:59:29.335943+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:59:22Z"}',
+2020-07-11T18:59:29.335943+00:00 app[web.1]: _json: {
+2020-07-11T18:59:29.335944+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:59:29.335944+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:59:29.335945+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:59:29.335945+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:59:29.335946+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:59:29.335946+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:59:29.335947+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.335947+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:59:29.335948+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:59:29.335948+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:59:29.335949+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:59:29.335949+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:59:29.335949+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:59:29.335950+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:59:29.335950+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:59:29.335950+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:59:29.335951+00:00 app[web.1]: type: 'User',
+2020-07-11T18:59:29.335951+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:59:29.335951+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:59:29.335951+00:00 app[web.1]: company: null,
+2020-07-11T18:59:29.335952+00:00 app[web.1]: blog: '',
+2020-07-11T18:59:29.335952+00:00 app[web.1]: location: null,
+2020-07-11T18:59:29.335952+00:00 app[web.1]: email: null,
+2020-07-11T18:59:29.335952+00:00 app[web.1]: hireable: null,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: bio: null,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: followers: 1,
+2020-07-11T18:59:29.335953+00:00 app[web.1]: following: 1,
+2020-07-11T18:59:29.335954+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:59:29.335954+00:00 app[web.1]: updated_at: '2020-07-11T18:59:22Z'
+2020-07-11T18:59:29.335954+00:00 app[web.1]: }
+2020-07-11T18:59:29.335954+00:00 app[web.1]: }
+2020-07-11T18:59:29.336216+00:00 app[web.1]: Before Session clear
+2020-07-11T18:59:29.336514+00:00 app[web.1]: {
+2020-07-11T18:59:29.336515+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:59:29.336516+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:59:29.336516+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:59:29.336517+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.336517+00:00 app[web.1]: photos: [
+2020-07-11T18:59:29.336518+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:59:29.336518+00:00 app[web.1]: ],
+2020-07-11T18:59:29.336518+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:59:29.336519+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:59:22Z"}',
+2020-07-11T18:59:29.336519+00:00 app[web.1]: _json: {
+2020-07-11T18:59:29.336520+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:59:29.336520+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:59:29.336520+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:59:29.336521+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:59:29.336521+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:59:29.336522+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:59:29.336522+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.336522+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:59:29.336523+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:59:29.336523+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:59:29.336524+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:59:29.336524+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:59:29.336525+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:59:29.336525+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:59:29.336525+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:59:29.336526+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:59:29.336526+00:00 app[web.1]: type: 'User',
+2020-07-11T18:59:29.336527+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:59:29.336527+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:59:29.336528+00:00 app[web.1]: company: null,
+2020-07-11T18:59:29.336528+00:00 app[web.1]: blog: '',
+2020-07-11T18:59:29.336529+00:00 app[web.1]: location: null,
+2020-07-11T18:59:29.336529+00:00 app[web.1]: email: null,
+2020-07-11T18:59:29.336530+00:00 app[web.1]: hireable: null,
+2020-07-11T18:59:29.336530+00:00 app[web.1]: bio: null,
+2020-07-11T18:59:29.336530+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:59:29.336533+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:59:29.336533+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:59:29.336534+00:00 app[web.1]: followers: 1,
+2020-07-11T18:59:29.336534+00:00 app[web.1]: following: 1,
+2020-07-11T18:59:29.336535+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:59:29.336535+00:00 app[web.1]: updated_at: '2020-07-11T18:59:22Z'
+2020-07-11T18:59:29.336536+00:00 app[web.1]: }
+2020-07-11T18:59:29.336536+00:00 app[web.1]: }
+2020-07-11T18:59:29.336572+00:00 app[web.1]: after Session clear
+2020-07-11T18:59:29.336849+00:00 app[web.1]: {
+2020-07-11T18:59:29.336850+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:59:29.336850+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:59:29.336850+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:59:29.336851+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.336851+00:00 app[web.1]: photos: [
+2020-07-11T18:59:29.336852+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:59:29.336852+00:00 app[web.1]: ],
+2020-07-11T18:59:29.336852+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:59:29.336853+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:59:22Z"}',
+2020-07-11T18:59:29.336853+00:00 app[web.1]: _json: {
+2020-07-11T18:59:29.336854+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:59:29.336854+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:59:29.336854+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:59:29.336855+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:59:29.336855+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:59:29.336855+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:59:29.336855+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.336856+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:59:29.336856+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:59:29.336856+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:59:29.336857+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:59:29.336857+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:59:29.336858+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:59:29.336858+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:59:29.336858+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:59:29.336858+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:59:29.336859+00:00 app[web.1]: type: 'User',
+2020-07-11T18:59:29.336859+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:59:29.336859+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:59:29.336859+00:00 app[web.1]: company: null,
+2020-07-11T18:59:29.336860+00:00 app[web.1]: blog: '',
+2020-07-11T18:59:29.336860+00:00 app[web.1]: location: null,
+2020-07-11T18:59:29.336860+00:00 app[web.1]: email: null,
+2020-07-11T18:59:29.336860+00:00 app[web.1]: hireable: null,
+2020-07-11T18:59:29.336860+00:00 app[web.1]: bio: null,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: followers: 1,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: following: 1,
+2020-07-11T18:59:29.336861+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:59:29.336862+00:00 app[web.1]: updated_at: '2020-07-11T18:59:22Z'
+2020-07-11T18:59:29.336862+00:00 app[web.1]: }
+2020-07-11T18:59:29.336862+00:00 app[web.1]: }
+2020-07-11T18:59:29.337024+00:00 app[web.1]: after req.logout() call
+2020-07-11T18:59:29.337126+00:00 app[web.1]: null
+2020-07-11T18:59:29.337980+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=6ae8e821-c0ba-4c4a-a9f8-c38ac6a72b42 fwd="106.209.218.189" dyno=web.1 connect=0ms service=5ms status=302 bytes=427 protocol=https
+2020-07-11T18:59:29.337980+00:00 app[web.1]: GET /logout 302 3.074 ms - 46
+2020-07-11T18:59:29.631061+00:00 app[web.1]: {
+2020-07-11T18:59:29.631080+00:00 app[web.1]: id: '62864554',
+2020-07-11T18:59:29.631081+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T18:59:29.631081+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T18:59:29.631082+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.631082+00:00 app[web.1]: photos: [
+2020-07-11T18:59:29.631085+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T18:59:29.631086+00:00 app[web.1]: ],
+2020-07-11T18:59:29.631086+00:00 app[web.1]: provider: 'github',
+2020-07-11T18:59:29.631087+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T18:59:22Z"}',
+2020-07-11T18:59:29.631088+00:00 app[web.1]: _json: {
+2020-07-11T18:59:29.631088+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T18:59:29.631089+00:00 app[web.1]: id: 62864554,
+2020-07-11T18:59:29.631089+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T18:59:29.631089+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T18:59:29.631090+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T18:59:29.631090+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T18:59:29.631091+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T18:59:29.631091+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T18:59:29.631092+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T18:59:29.631092+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T18:59:29.631093+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T18:59:29.631093+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T18:59:29.631094+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T18:59:29.631094+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T18:59:29.631095+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T18:59:29.631095+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T18:59:29.631095+00:00 app[web.1]: type: 'User',
+2020-07-11T18:59:29.631096+00:00 app[web.1]: site_admin: false,
+2020-07-11T18:59:29.631096+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T18:59:29.631097+00:00 app[web.1]: company: null,
+2020-07-11T18:59:29.631097+00:00 app[web.1]: blog: '',
+2020-07-11T18:59:29.631098+00:00 app[web.1]: location: null,
+2020-07-11T18:59:29.631098+00:00 app[web.1]: email: null,
+2020-07-11T18:59:29.631098+00:00 app[web.1]: hireable: null,
+2020-07-11T18:59:29.631099+00:00 app[web.1]: bio: null,
+2020-07-11T18:59:29.631099+00:00 app[web.1]: twitter_username: null,
+2020-07-11T18:59:29.631100+00:00 app[web.1]: public_repos: 10,
+2020-07-11T18:59:29.631100+00:00 app[web.1]: public_gists: 0,
+2020-07-11T18:59:29.631100+00:00 app[web.1]: followers: 1,
+2020-07-11T18:59:29.631101+00:00 app[web.1]: following: 1,
+2020-07-11T18:59:29.631101+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T18:59:29.631102+00:00 app[web.1]: updated_at: '2020-07-11T18:59:22Z'
+2020-07-11T18:59:29.631102+00:00 app[web.1]: }
+2020-07-11T18:59:29.631102+00:00 app[web.1]: }
+2020-07-11T18:59:29.822768+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=38709bc1-1d1c-41e8-9747-c2aba8e32541 fwd="106.209.218.189" dyno=web.1 connect=0ms service=194ms status=304 bytes=345 protocol=https
+2020-07-11T18:59:29.823006+00:00 app[web.1]: GET / 304 192.860 ms - -
+2020-07-11T18:59:30.152785+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=8ad5f251-2cce-4960-b46a-a7ebbe8e91a4 fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T18:59:30.153134+00:00 app[web.1]: GET /stylesheets/style.css 304 0.766 ms - -
+2020-07-11T18:59:30.476979+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=813cafab-2c9a-413a-b034-54f32884c103 fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https
+2020-07-11T18:59:30.477086+00:00 app[web.1]: GET /images/logo.png 304 0.877 ms - -
+2020-07-11T19:04:18.776323+00:00 app[web.1]: GET / 200 191.436 ms - 8850
+2020-07-11T19:04:18.777465+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=1b4ecd9b-823e-47df-98a6-d62c8fa4ca7c fwd="106.209.218.189" dyno=web.1 connect=0ms service=193ms status=200 bytes=9375 protocol=https
+2020-07-11T19:04:19.146618+00:00 app[web.1]: GET /stylesheets/style.css 200 0.977 ms - 4343
+2020-07-11T19:04:19.147322+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=7a23b384-d77b-4ce9-9bed-d8a2cff1ff83 fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=200 bytes=4825 protocol=https
+2020-07-11T19:04:20.166060+00:00 app[web.1]: GET /images/logo.png 200 0.967 ms - 31541
+2020-07-11T19:04:20.167230+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=109575e0-1411-4dfa-adb3-3dbdff2c3d7b fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=200 bytes=32010 protocol=https
+2020-07-11T19:04:24.306547+00:00 app[web.1]: GET /login 302 1.738 ms - 0
+2020-07-11T19:04:24.307665+00:00 heroku[router]: at=info method=GET path="/login" host=samrat-news.herokuapp.com request_id=9de17a63-d354-4cd9-b8e3-199999546ef0 fwd="106.209.218.189" dyno=web.1 connect=0ms service=4ms status=302 bytes=475 protocol=https
+2020-07-11T19:04:39.898089+00:00 app[web.1]: GET /auth?code=f3284cd0dafba9dc1c82 302 227.974 ms - 46
+2020-07-11T19:04:39.904781+00:00 heroku[router]: at=info method=GET path="/auth?code=f3284cd0dafba9dc1c82" host=samrat-news.herokuapp.com request_id=be51ea39-604e-4451-bbcd-83a23431991b fwd="106.209.218.189" dyno=web.1 connect=0ms service=235ms status=302 bytes=427 protocol=https
+2020-07-11T19:04:40.235556+00:00 app[web.1]: {
+2020-07-11T19:04:40.235598+00:00 app[web.1]: id: '62864554',
+2020-07-11T19:04:40.235601+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T19:04:40.235603+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T19:04:40.235603+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T19:04:40.235604+00:00 app[web.1]: photos: [
+2020-07-11T19:04:40.235605+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T19:04:40.235605+00:00 app[web.1]: ],
+2020-07-11T19:04:40.235606+00:00 app[web.1]: provider: 'github',
+2020-07-11T19:04:40.235610+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T19:04:38Z"}',
+2020-07-11T19:04:40.235610+00:00 app[web.1]: _json: {
+2020-07-11T19:04:40.235611+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T19:04:40.235611+00:00 app[web.1]: id: 62864554,
+2020-07-11T19:04:40.235612+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T19:04:40.235612+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T19:04:40.235613+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T19:04:40.235614+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T19:04:40.235614+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T19:04:40.235614+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T19:04:40.235616+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T19:04:40.235616+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T19:04:40.235616+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T19:04:40.235617+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T19:04:40.235618+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T19:04:40.235618+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T19:04:40.235618+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T19:04:40.235619+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T19:04:40.235620+00:00 app[web.1]: type: 'User',
+2020-07-11T19:04:40.235620+00:00 app[web.1]: site_admin: false,
+2020-07-11T19:04:40.235620+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T19:04:40.235621+00:00 app[web.1]: company: null,
+2020-07-11T19:04:40.235621+00:00 app[web.1]: blog: '',
+2020-07-11T19:04:40.235621+00:00 app[web.1]: location: null,
+2020-07-11T19:04:40.235622+00:00 app[web.1]: email: null,
+2020-07-11T19:04:40.235622+00:00 app[web.1]: hireable: null,
+2020-07-11T19:04:40.235622+00:00 app[web.1]: bio: null,
+2020-07-11T19:04:40.235623+00:00 app[web.1]: twitter_username: null,
+2020-07-11T19:04:40.235623+00:00 app[web.1]: public_repos: 10,
+2020-07-11T19:04:40.235623+00:00 app[web.1]: public_gists: 0,
+2020-07-11T19:04:40.235624+00:00 app[web.1]: followers: 1,
+2020-07-11T19:04:40.235624+00:00 app[web.1]: following: 1,
+2020-07-11T19:04:40.235624+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T19:04:40.235625+00:00 app[web.1]: updated_at: '2020-07-11T19:04:38Z'
+2020-07-11T19:04:40.235625+00:00 app[web.1]: }
+2020-07-11T19:04:40.235625+00:00 app[web.1]: }
+2020-07-11T19:04:40.428236+00:00 app[web.1]: GET / 200 193.492 ms - 8923
+2020-07-11T19:04:40.429308+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=c20a7577-1332-42f3-a17a-63300dbf506b fwd="106.209.218.189" dyno=web.1 connect=0ms service=196ms status=200 bytes=9320 protocol=https
+2020-07-11T19:04:40.825573+00:00 app[web.1]: GET /stylesheets/style.css 304 0.714 ms - -
+2020-07-11T19:04:40.826288+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=87ec67f7-b0d1-4714-8329-099fcb9f89cc fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T19:04:41.240125+00:00 app[web.1]: GET /images/logo.png 304 0.657 ms - -
+2020-07-11T19:04:41.241168+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=f4938f5c-6a94-415b-98a4-33d5a2e6b309 fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T19:04:48.778833+00:00 app[web.1]: {
+2020-07-11T19:04:48.778846+00:00 app[web.1]: id: '62864554',
+2020-07-11T19:04:48.778861+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T19:04:48.778862+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T19:04:48.778862+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.778862+00:00 app[web.1]: photos: [
+2020-07-11T19:04:48.778863+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T19:04:48.778864+00:00 app[web.1]: ],
+2020-07-11T19:04:48.778864+00:00 app[web.1]: provider: 'github',
+2020-07-11T19:04:48.778866+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T19:04:38Z"}',
+2020-07-11T19:04:48.778867+00:00 app[web.1]: _json: {
+2020-07-11T19:04:48.778867+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T19:04:48.778867+00:00 app[web.1]: id: 62864554,
+2020-07-11T19:04:48.778868+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T19:04:48.778869+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T19:04:48.778869+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T19:04:48.778870+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T19:04:48.778870+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.778871+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T19:04:48.778872+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T19:04:48.778872+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T19:04:48.778873+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T19:04:48.778874+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T19:04:48.778874+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T19:04:48.778875+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T19:04:48.778875+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T19:04:48.778876+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T19:04:48.778876+00:00 app[web.1]: type: 'User',
+2020-07-11T19:04:48.778877+00:00 app[web.1]: site_admin: false,
+2020-07-11T19:04:48.778877+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T19:04:48.778878+00:00 app[web.1]: company: null,
+2020-07-11T19:04:48.778878+00:00 app[web.1]: blog: '',
+2020-07-11T19:04:48.778879+00:00 app[web.1]: location: null,
+2020-07-11T19:04:48.778879+00:00 app[web.1]: email: null,
+2020-07-11T19:04:48.778880+00:00 app[web.1]: hireable: null,
+2020-07-11T19:04:48.778880+00:00 app[web.1]: bio: null,
+2020-07-11T19:04:48.778881+00:00 app[web.1]: twitter_username: null,
+2020-07-11T19:04:48.778882+00:00 app[web.1]: public_repos: 10,
+2020-07-11T19:04:48.778882+00:00 app[web.1]: public_gists: 0,
+2020-07-11T19:04:48.778883+00:00 app[web.1]: followers: 1,
+2020-07-11T19:04:48.778883+00:00 app[web.1]: following: 1,
+2020-07-11T19:04:48.778884+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T19:04:48.778884+00:00 app[web.1]: updated_at: '2020-07-11T19:04:38Z'
+2020-07-11T19:04:48.778884+00:00 app[web.1]: }
+2020-07-11T19:04:48.778885+00:00 app[web.1]: }
+2020-07-11T19:04:48.779150+00:00 app[web.1]: Before Session clear
+2020-07-11T19:04:48.779546+00:00 app[web.1]: {
+2020-07-11T19:04:48.779547+00:00 app[web.1]: id: '62864554',
+2020-07-11T19:04:48.779547+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T19:04:48.779548+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T19:04:48.779548+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.779549+00:00 app[web.1]: photos: [
+2020-07-11T19:04:48.779550+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T19:04:48.779550+00:00 app[web.1]: ],
+2020-07-11T19:04:48.779551+00:00 app[web.1]: provider: 'github',
+2020-07-11T19:04:48.779552+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T19:04:38Z"}',
+2020-07-11T19:04:48.779552+00:00 app[web.1]: _json: {
+2020-07-11T19:04:48.779553+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T19:04:48.779553+00:00 app[web.1]: id: 62864554,
+2020-07-11T19:04:48.779554+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T19:04:48.779554+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T19:04:48.779555+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T19:04:48.779555+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T19:04:48.779556+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.779556+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T19:04:48.779557+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T19:04:48.779558+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T19:04:48.779558+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T19:04:48.779559+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T19:04:48.779559+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T19:04:48.779560+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T19:04:48.779560+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T19:04:48.779561+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T19:04:48.779561+00:00 app[web.1]: type: 'User',
+2020-07-11T19:04:48.779562+00:00 app[web.1]: site_admin: false,
+2020-07-11T19:04:48.779562+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T19:04:48.779563+00:00 app[web.1]: company: null,
+2020-07-11T19:04:48.779563+00:00 app[web.1]: blog: '',
+2020-07-11T19:04:48.779564+00:00 app[web.1]: location: null,
+2020-07-11T19:04:48.779564+00:00 app[web.1]: email: null,
+2020-07-11T19:04:48.779565+00:00 app[web.1]: hireable: null,
+2020-07-11T19:04:48.779565+00:00 app[web.1]: bio: null,
+2020-07-11T19:04:48.779565+00:00 app[web.1]: twitter_username: null,
+2020-07-11T19:04:48.779566+00:00 app[web.1]: public_repos: 10,
+2020-07-11T19:04:48.779566+00:00 app[web.1]: public_gists: 0,
+2020-07-11T19:04:48.779567+00:00 app[web.1]: followers: 1,
+2020-07-11T19:04:48.779567+00:00 app[web.1]: following: 1,
+2020-07-11T19:04:48.779568+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T19:04:48.779568+00:00 app[web.1]: updated_at: '2020-07-11T19:04:38Z'
+2020-07-11T19:04:48.779568+00:00 app[web.1]: }
+2020-07-11T19:04:48.779569+00:00 app[web.1]: }
+2020-07-11T19:04:48.779689+00:00 app[web.1]: after Session clear
+2020-07-11T19:04:48.780054+00:00 app[web.1]: {
+2020-07-11T19:04:48.780055+00:00 app[web.1]: id: '62864554',
+2020-07-11T19:04:48.780056+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T19:04:48.780056+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T19:04:48.780056+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.780057+00:00 app[web.1]: photos: [
+2020-07-11T19:04:48.780057+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T19:04:48.780058+00:00 app[web.1]: ],
+2020-07-11T19:04:48.780058+00:00 app[web.1]: provider: 'github',
+2020-07-11T19:04:48.780078+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T19:04:38Z"}',
+2020-07-11T19:04:48.780079+00:00 app[web.1]: _json: {
+2020-07-11T19:04:48.780079+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T19:04:48.780079+00:00 app[web.1]: id: 62864554,
+2020-07-11T19:04:48.780080+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T19:04:48.780080+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T19:04:48.780081+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T19:04:48.780081+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T19:04:48.780082+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T19:04:48.780082+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T19:04:48.780083+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T19:04:48.780083+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T19:04:48.780084+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T19:04:48.780084+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T19:04:48.780085+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T19:04:48.780085+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T19:04:48.780086+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T19:04:48.780086+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T19:04:48.780087+00:00 app[web.1]: type: 'User',
+2020-07-11T19:04:48.780087+00:00 app[web.1]: site_admin: false,
+2020-07-11T19:04:48.780087+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T19:04:48.780089+00:00 app[web.1]: company: null,
+2020-07-11T19:04:48.780089+00:00 app[web.1]: blog: '',
+2020-07-11T19:04:48.780090+00:00 app[web.1]: location: null,
+2020-07-11T19:04:48.780090+00:00 app[web.1]: email: null,
+2020-07-11T19:04:48.780091+00:00 app[web.1]: hireable: null,
+2020-07-11T19:04:48.780091+00:00 app[web.1]: bio: null,
+2020-07-11T19:04:48.780091+00:00 app[web.1]: twitter_username: null,
+2020-07-11T19:04:48.780092+00:00 app[web.1]: public_repos: 10,
+2020-07-11T19:04:48.780092+00:00 app[web.1]: public_gists: 0,
+2020-07-11T19:04:48.780093+00:00 app[web.1]: followers: 1,
+2020-07-11T19:04:48.780093+00:00 app[web.1]: following: 1,
+2020-07-11T19:04:48.780094+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T19:04:48.780094+00:00 app[web.1]: updated_at: '2020-07-11T19:04:38Z'
+2020-07-11T19:04:48.780095+00:00 app[web.1]: }
+2020-07-11T19:04:48.780095+00:00 app[web.1]: }
+2020-07-11T19:04:48.780230+00:00 app[web.1]: after req.logout() call
+2020-07-11T19:04:48.780314+00:00 app[web.1]: null
+2020-07-11T19:04:48.781422+00:00 app[web.1]: GET /logout 302 5.950 ms - 46
+2020-07-11T19:04:48.783023+00:00 heroku[router]: at=info method=GET path="/logout" host=samrat-news.herokuapp.com request_id=ebf8ce3a-f15f-4732-917f-7f2a0659dcba fwd="106.209.218.189" dyno=web.1 connect=0ms service=8ms status=302 bytes=427 protocol=https
+2020-07-11T19:04:49.086287+00:00 app[web.1]: {
+2020-07-11T19:04:49.086309+00:00 app[web.1]: id: '62864554',
+2020-07-11T19:04:49.086310+00:00 app[web.1]: displayName: 'Samrat Mallick',
+2020-07-11T19:04:49.086310+00:00 app[web.1]: username: 'coolaquas',
+2020-07-11T19:04:49.086311+00:00 app[web.1]: profileUrl: 'https://github.com/coolaquas',
+2020-07-11T19:04:49.086311+00:00 app[web.1]: photos: [
+2020-07-11T19:04:49.086312+00:00 app[web.1]: { value: 'https://avatars1.githubusercontent.com/u/62864554?v=4' }
+2020-07-11T19:04:49.086313+00:00 app[web.1]: ],
+2020-07-11T19:04:49.086313+00:00 app[web.1]: provider: 'github',
+2020-07-11T19:04:49.086314+00:00 app[web.1]: _raw: '{"login":"coolaquas","id":62864554,"node_id":"MDQ6VXNlcjYyODY0NTU0","avatar_url":"https://avatars1.githubusercontent.com/u/62864554?v=4","gravatar_id":"","url":"https://api.github.com/users/coolaquas","html_url":"https://github.com/coolaquas","followers_url":"https://api.github.com/users/coolaquas/followers","following_url":"https://api.github.com/users/coolaquas/following{/other_user}","gists_url":"https://api.github.com/users/coolaquas/gists{/gist_id}","starred_url":"https://api.github.com/users/coolaquas/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/coolaquas/subscriptions","organizations_url":"https://api.github.com/users/coolaquas/orgs","repos_url":"https://api.github.com/users/coolaquas/repos","events_url":"https://api.github.com/users/coolaquas/events{/privacy}","received_events_url":"https://api.github.com/users/coolaquas/received_events","type":"User","site_admin":false,"name":"Samrat Mallick","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":10,"public_gists":0,"followers":1,"following":1,"created_at":"2020-03-30T02:49:44Z","updated_at":"2020-07-11T19:04:38Z"}',
+2020-07-11T19:04:49.086315+00:00 app[web.1]: _json: {
+2020-07-11T19:04:49.086315+00:00 app[web.1]: login: 'coolaquas',
+2020-07-11T19:04:49.086316+00:00 app[web.1]: id: 62864554,
+2020-07-11T19:04:49.086317+00:00 app[web.1]: node_id: 'MDQ6VXNlcjYyODY0NTU0',
+2020-07-11T19:04:49.086317+00:00 app[web.1]: avatar_url: 'https://avatars1.githubusercontent.com/u/62864554?v=4',
+2020-07-11T19:04:49.086318+00:00 app[web.1]: gravatar_id: '',
+2020-07-11T19:04:49.086319+00:00 app[web.1]: url: 'https://api.github.com/users/coolaquas',
+2020-07-11T19:04:49.086319+00:00 app[web.1]: html_url: 'https://github.com/coolaquas',
+2020-07-11T19:04:49.086320+00:00 app[web.1]: followers_url: 'https://api.github.com/users/coolaquas/followers',
+2020-07-11T19:04:49.086321+00:00 app[web.1]: following_url: 'https://api.github.com/users/coolaquas/following{/other_user}',
+2020-07-11T19:04:49.086321+00:00 app[web.1]: gists_url: 'https://api.github.com/users/coolaquas/gists{/gist_id}',
+2020-07-11T19:04:49.086322+00:00 app[web.1]: starred_url: 'https://api.github.com/users/coolaquas/starred{/owner}{/repo}',
+2020-07-11T19:04:49.086322+00:00 app[web.1]: subscriptions_url: 'https://api.github.com/users/coolaquas/subscriptions',
+2020-07-11T19:04:49.086323+00:00 app[web.1]: organizations_url: 'https://api.github.com/users/coolaquas/orgs',
+2020-07-11T19:04:49.086323+00:00 app[web.1]: repos_url: 'https://api.github.com/users/coolaquas/repos',
+2020-07-11T19:04:49.086323+00:00 app[web.1]: events_url: 'https://api.github.com/users/coolaquas/events{/privacy}',
+2020-07-11T19:04:49.086324+00:00 app[web.1]: received_events_url: 'https://api.github.com/users/coolaquas/received_events',
+2020-07-11T19:04:49.086324+00:00 app[web.1]: type: 'User',
+2020-07-11T19:04:49.086325+00:00 app[web.1]: site_admin: false,
+2020-07-11T19:04:49.086326+00:00 app[web.1]: name: 'Samrat Mallick',
+2020-07-11T19:04:49.086326+00:00 app[web.1]: company: null,
+2020-07-11T19:04:49.086327+00:00 app[web.1]: blog: '',
+2020-07-11T19:04:49.086327+00:00 app[web.1]: location: null,
+2020-07-11T19:04:49.086328+00:00 app[web.1]: email: null,
+2020-07-11T19:04:49.086328+00:00 app[web.1]: hireable: null,
+2020-07-11T19:04:49.086328+00:00 app[web.1]: bio: null,
+2020-07-11T19:04:49.086329+00:00 app[web.1]: twitter_username: null,
+2020-07-11T19:04:49.086329+00:00 app[web.1]: public_repos: 10,
+2020-07-11T19:04:49.086330+00:00 app[web.1]: public_gists: 0,
+2020-07-11T19:04:49.086330+00:00 app[web.1]: followers: 1,
+2020-07-11T19:04:49.086330+00:00 app[web.1]: following: 1,
+2020-07-11T19:04:49.086331+00:00 app[web.1]: created_at: '2020-03-30T02:49:44Z',
+2020-07-11T19:04:49.086331+00:00 app[web.1]: updated_at: '2020-07-11T19:04:38Z'
+2020-07-11T19:04:49.086332+00:00 app[web.1]: }
+2020-07-11T19:04:49.086332+00:00 app[web.1]: }
+2020-07-11T19:04:49.279554+00:00 app[web.1]: GET / 304 194.256 ms - -
+2020-07-11T19:04:49.280386+00:00 heroku[router]: at=info method=GET path="/" host=samrat-news.herokuapp.com request_id=4d70447f-b612-4a68-a440-406576a27dd6 fwd="106.209.218.189" dyno=web.1 connect=0ms service=196ms status=304 bytes=345 protocol=https
+2020-07-11T19:04:49.840946+00:00 app[web.1]: GET /stylesheets/style.css 304 0.740 ms - -
+2020-07-11T19:04:49.845117+00:00 heroku[router]: at=info method=GET path="/stylesheets/style.css" host=samrat-news.herokuapp.com request_id=692dddeb-d96d-4675-a9a0-d639643d7e03 fwd="106.209.218.189" dyno=web.1 connect=0ms service=2ms status=304 bytes=431 protocol=https
+2020-07-11T19:04:50.182477+00:00 app[web.1]: GET /images/logo.png 304 0.971 ms - -
+2020-07-11T19:04:50.183045+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=samrat-news.herokuapp.com request_id=1135fa4d-0511-4c7a-b37f-9ec326a94c69 fwd="106.209.218.189" dyno=web.1 connect=0ms service=3ms status=304 bytes=431 protocol=https

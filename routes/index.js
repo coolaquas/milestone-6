@@ -34,13 +34,8 @@ router.get("/auth", passport.authenticate('github', {
 }))
 
 router.get("/logout", (req, res, next) => {
-  console.log("Before Session clear");
-  console.log(req.user);
-  req.session = null;
-  console.log("after Session clear");
-  console.log(req.user);
   req.logout();
-  console.log("after req.logout() call");
+  console.log("after logout() call");
   console.log(req.user);
   res.redirect("/");
 })
