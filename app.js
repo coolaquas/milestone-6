@@ -28,7 +28,7 @@ mongoose.connect(process.env.mongoDBConnection, { useNewUrlParser: true, useUnif
 
 //=======Passport========
 
-const session = require('cookie-session');
+const session = require('express-session');
 const passport = require("passport");
 const { Console } = require('console');
 const GitHubStrategy = require('passport-github').Strategy;
@@ -40,6 +40,7 @@ passport.serializeUser(function (user, done) {
 
 passport.deserializeUser(function (id, done) {
   ModelData.userData.find({githubId: id}, function (err, user) {
+    console.log(user);
     done(err, user);
   });
 });
@@ -76,8 +77,9 @@ function(accessToken, refreshToken, profile, done) {
   }
 ));
 app.use(session({
-  name: 'hacker-News Session',
-  keys: ['key1', 'key2']
+  secret: 'keyboard Sam',
+  resave: false,
+  saveUninitialized: true
 }))
 app.use(passport.initialize());
 app.use(passport.session());
@@ -86,7 +88,7 @@ app.use(passport.session());
 
 app.use('/', indexRouter);
 
-
+``
 
 
 
