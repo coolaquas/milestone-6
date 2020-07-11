@@ -54,6 +54,7 @@ router.get('/', function (req, res, next) {
     userName = req.user.displayName;
   }
   ModelData.Post.find({}, (error, result) => {
+    console.log(req.user);
     res.render('index', { userDisplayName: `${userName}`, parsedData: result });
   })
 });
