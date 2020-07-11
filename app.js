@@ -3,7 +3,6 @@ const express = require('express');
 const helmet = require('helmet');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-const cookieSession = require('cookie-session');
 const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const mongoose = require('mongoose');
@@ -76,7 +75,7 @@ function(accessToken, refreshToken, profile, done) {
       });
   }
 ));
-app.use(cookieSession({
+app.use(session({
   name: 'hacker-News Session',
   keys: ['key1', 'key2']
 }))
