@@ -39,8 +39,10 @@ passport.serializeUser(function (user, done) {
 });
 
 passport.deserializeUser(function (id, done) {
-  ModelData.userData.find({githubId: id}, function (err, user) {
-    console.log(user);
+  ModelData.userData.find({ githubId: id }, function (err, user) {
+    user.id = githubId;
+    user.displayName = displayName;
+    user.profileUrl = profileUrl;
     done(err, user);
   });
 });
@@ -49,31 +51,31 @@ passport.use(new GitHubStrategy({
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
   callbackURL: "https://samrat-news.herokuapp.com/auth"
 },
-function(accessToken, refreshToken, profile, done) {
-  //check user table for anyone with a githubID of profile.id
-  ModelData.userData.findOne({
-      'githubId': profile.id 
-  }, function(err, user) {
+  function (accessToken, refreshToken, profile, done) {
+    //check user table for anyone with a githubID of profile.id
+    ModelData.userData.findOne({
+      'githubId': profile.id
+    }, function (err, user) {
       if (err) {
-          return done(err);
+        return done(err);
       }
       //No user was found... so create a new user with values from Github (all the profile. stuff)
       if (!user) {
         const userLoginData = {
-                  githubId: profile.id,
-                  displayName:profile.displayName,
-                  profileUrl:profile.profileUrl
-                }
-                let Data = ModelData.userData(userLoginData);
-                Data.save(function(err) {
-                  if (err) console.log(err);
-                  return done(err, user);
-              });
-          } else {
-              //found user. Return
-              return done(err, user);
-          }
-      });
+          githubId: profile.id,
+          displayName: profile.displayName,
+          profileUrl: profile.profileUrl
+        }
+        let Data = ModelData.userData(userLoginData);
+        Data.save(function (err) {
+          if (err) console.log(err);
+          return done(err, user);
+        });
+      } else {
+        //found user. Return
+        return done(err, user);
+      }
+    });
   }
 ));
 app.use(session({
