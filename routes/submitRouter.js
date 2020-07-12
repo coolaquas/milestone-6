@@ -20,7 +20,6 @@ router.post("/createPost", (req, res, next) => {
     const myPostFormData = {
       title: req.body.title,
       URL: req.body.URL,
-      vote: 0,
       type: "Post",
       by: req.user.displayName,
       body: req.body.body,
