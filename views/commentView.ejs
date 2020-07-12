@@ -11,7 +11,7 @@
 
   <div class="box">
    <div id="cv1"><a href="<%= parsedData.URL %>" target="_blank"> ₪ <%= parsedData.title %> </a></div>
-    <div id="cv2"> <%= parsedData.body %><br /><%= parsedData.vote %> points by <%= parsedData.by %> <a href="/comment/view/<%= parsedData._id %>"><%= parsedData.comments.length %> comments</a></div>
+    <div id="cv2"> <%= parsedData.body %><br /><%= parsedData.vote.length %> points by <%= parsedData.by %> <a href="/comment/view/<%= parsedData._id %>"><%= parsedData.comments.length %> comments</a></div>
     <p><br /><br />
     <form action="/comment/addComment/<%= parsedData._id %>" method="post">
       <div class="inputBox">
