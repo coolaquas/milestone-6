@@ -232,3 +232,10 @@ font-size: larger;
     width: auto;
   }
 }
+
+#delete{
+  margin: 0;
+  margin-top: 5px;
+  background-color: rgba(75, 214, 82, 0.5);
+  border-radius: 5px;
+}

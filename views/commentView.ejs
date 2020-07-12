@@ -25,7 +25,7 @@
       <ul>
         <% parsedData.comments.map((comment)=> { %>
           <li><%= comment.body %>
-            <p id="list_footer">―― <%= comment.by %> on <%= comment.comment_creation %></p>
+            <p id="list_footer">―― <%= comment.by %> on <%= comment.comment_creation %><a id = "delete" href="/comment/delete?parent=<%= parsedData._id%>&comment=<%= comment._id %>">Delete</a></p>
           </li>
         <% })  %>
         </ul>

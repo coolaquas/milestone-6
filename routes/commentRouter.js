@@ -55,4 +55,26 @@ router.post('/addComment/:post_id', (req, res, next) => {
     }
 })
 
+router.get("/delete",function(req,res,next){
+    const postId = req.query.parent;
+    const commentId = req.query.comment;
+    console.log(postId);
+    console.log(commentId);
+    ModelData.Comment.findByIdAndDelete(commentId,(err)=>{
+        err ? console.log("err") : console.log("comment Deleted from comments DB");
+    })
+    ModelData.Post.findById(postId)
+    .exec((err,post)=>{
+        post.comments.map((comment,Index)=>{
+            if (comment._id == commentId)
+            {
+                post.comments.splice(Index,1);
+                post.save((err)=>console.log(err));
+                res.redirect('/');
+            }
+        })
+    })
+})
+
+
 module.exports = router;
