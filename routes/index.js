@@ -54,6 +54,30 @@ router.get('/', function (req, res, next) {
   })
 });
 
+router.get('/vote/:post_id',function(req,res,next) {
+  if(req.query.voter == "undefined"){
+    res.render('loginPlease', { userDisplayName: `undefined`, label: "Vote" })
+  } else {
+    const post_id = req.params.post_id;
+    ModelData.Post.findById(post_id)
+    .exec((error, result) => {
+      let voterPosition = result.vote.indexOf(req.query.voter);
+      if(voterPosition > -1) {
+        result.vote.splice(voterPosition, 1);
+        result.save ((err)=> {
+          err ? res.send("you have some error", err) : res.redirect("/");
+        })
+      } else {
+        console.log(result.vote);
+        result.vote.push(req.query.voter);
+        result.save ((err)=> {
+          err ? res.send("you have some error", err) : res.redirect("/");
+        })
+      }
+    })
+
+  }
+})
 
 
 

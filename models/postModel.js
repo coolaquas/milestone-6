@@ -14,7 +14,7 @@ var commentSchema = new Schema ({
 var postSchema = new Schema({
     title: String,
     URL: String,
-    vote: Number,
+    vote: Array,
     type: String,
     by: String,
     post_creation: { type: Date, default: Date.now },
