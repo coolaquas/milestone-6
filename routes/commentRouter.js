@@ -71,7 +71,7 @@ router.get("/delete", function (req, res, next) {
                         if (comment._id == commentId) {
                             post.comments.splice(Index, 1);
                             post.save((err) => console.log(err));
-                            res.redirect(200,'/');
+                            res.redirect('/');
                         }
                     })
                 } else {
