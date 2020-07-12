@@ -55,26 +55,32 @@ router.post('/addComment/:post_id', (req, res, next) => {
     }
 })
 
-router.get("/delete",function(req,res,next){
+router.get("/delete", function (req, res, next) {
     const postId = req.query.parent;
     const commentId = req.query.comment;
-    console.log(postId);
-    console.log(commentId);
-    ModelData.Comment.findByIdAndDelete(commentId,(err)=>{
-        err ? console.log("err") : console.log("comment Deleted from comments DB");
-    })
-    ModelData.Post.findById(postId)
-    .exec((err,post)=>{
-        post.comments.map((comment,Index)=>{
-            if (comment._id == commentId)
-            {
-                post.comments.splice(Index,1);
-                post.save((err)=>console.log(err));
-                res.redirect('/');
-            }
-        })
-    })
-})
+    if (req.user) {
 
+        ModelData.Comment.findByIdAndDelete(commentId, (err) => {
+
+            err ? console.log("err") : console.log(req.user.displayName);
+        })
+        ModelData.Post.findById(postId)
+            .exec((err, post) => {
+                if (req.user.displayName == post.by) {
+                    post.comments.map((comment, Index) => {
+                        if (comment._id == commentId) {
+                            post.comments.splice(Index, 1);
+                            post.save((err) => console.log(err));
+                            res.redirect(200,'/');
+                        }
+                    })
+                } else {
+                    res.send(203,"Only Author of the post can delete comments");
+                }
+            })
+    } else {
+        res.send(401,"please login first to delete comment")
+    }
+})
 
 module.exports = router;
