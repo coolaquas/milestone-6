@@ -10,25 +10,37 @@
   <% include navbar %>
 
   <div class="box">
-   <div id="cv1"><a href="<%= parsedData.URL %>" target="_blank"> ₪ <%= parsedData.title %> </a></div>
-    <div id="cv2"> <%= parsedData.body %><br /><%= parsedData.vote.length %> points by <%= parsedData.by %> <a href="/comment/view/<%= parsedData._id %>"><%= parsedData.comments.length %> comments</a></div>
+    <div id="cv1"><a href="<%= parsedData.URL %>" target="_blank"> ₪ <%= parsedData.title %> </a></div>
+    <div id="cv2"> <%= parsedData.body %><br /><%= parsedData.vote.length %> points by <%= parsedData.by %> <a
+        href="/comment/view/<%= parsedData._id %>"><%= parsedData.comments.length %> comments</a></div>
     <p><br /><br />
     <form action="/comment/addComment/<%= parsedData._id %>" method="post">
       <div class="inputBox">
         <input type="text" name="comment" required="" />
         <label>Comment</label>
       </div>
-        <input type="submit" value="Add Comment" />
+      <input type="submit" value="Add Comment" />
     </form>
     </p>
     <div class="comment_list">
       <ul>
         <% parsedData.comments.map((comment)=> { %>
-          <li><%= comment.body %>
-            <p id="list_footer">―― <%= comment.by %> on <%= comment.comment_creation %><a id = "delete" href="/comment/delete?parent=<%= parsedData._id%>&comment=<%= comment._id %>">Delete</a></p>
-          </li>
+        <% let currentDate = new Date(), show, commentDate = (comment.comment_creation) %>
+        <% let diff = Math.floor((currentDate.getTime()- commentDate.getTime())/(1000*60*60))%>
+        <%  if(diff >= 24) {%>
+        <% let day = Math.floor(diff/24) %>
+        <% let hrs = Math.floor(diff%24) %>
+        <% show = (day + " days " + hrs + " hours Ago") %>
+        <% } else {%>
+        <% show = (diff + " hours Ago") %>
+        <% }%>
+        <li><%= comment.body %>
+
+          <p id="list_footer">―― <%= comment.by %> on <%= show %> <a id="delete"
+              href="/comment/delete?parent=<%= parsedData._id%>&comment=<%= comment._id %>">Delete</a></p>
+        </li>
         <% })  %>
-        </ul>
+      </ul>
     </div>
   </div>
 

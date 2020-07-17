@@ -1,11 +1,23 @@
 <div class="Container">
   <ol>
     <% parsedData.map((post)=> { %>
-      <div>
-        <li><a class= "anchor" href="<%= post.URL %>" target="_blank"> <%= post.title %> </a>
-          <p id = "list_footer"><a class="navbar-brand" href="/vote/<%= post._id %>?voter=<%= userDisplayName%>"><%= post.vote.length %> points ✔ </a>  by <%= post.by %> <%= post.post_creation %> | <a href="/comment/view/<%= post._id %>"><%= post.comments.length %> comments</a></p>
-        </li>
-      </div>
-      <% })  %>
+    <div>
+      <% let currentDate = new Date(), show; %>
+      <% let diff = Math.floor((currentDate.getTime()- post.post_creation.getTime())/(1000*60*60))%>
+      <%  if(diff >= 24) {%>
+      <% let day = Math.floor(diff/24); %>
+      <% let hrs = Math.floor(diff%24); %>
+      <% show = (day + " days " + hrs + " hours Ago"); %>
+      <% } else {%>
+      <% show = (diff + " hours Ago") %>
+      <% }%>
+      <li><a class="anchor" href="<%= post.URL %>" target="_blank"> <%= post.title %> </a>
+        <p id="list_footer"><a class="navbar-brand"
+            href="/vote/<%= post._id %>?voter=<%= userDisplayName%>"><%= post.vote.length %> points ✔ </a> by
+          <%= post.by %> <%= show %> | <a href="/comment/view/<%= post._id %>"><%= post.comments.length %> comments</a>
+        </p>
+      </li>
+    </div>
+    <% })  %>
   </ol>
 </div>
